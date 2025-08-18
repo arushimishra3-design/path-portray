@@ -5,34 +5,34 @@ import { Badge } from "@/components/ui/badge";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product catalog, shopping cart, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
+      title: "Ford AI-Powered Messaging Platform",
+      description: "Led development of Ford's next-gen AI-powered messaging infrastructure driving personalization, targeting, and timing precision across FordPass mobile and In-Vehicle platforms.",
+      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80",
+      technologies: ["AI/ML", "Personalization", "Mobile Platforms", "Real-time Messaging", "Analytics"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, drag-and-drop interface, and team collaboration features. Built with modern web technologies.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=80",
-      technologies: ["React", "TypeScript", "Socket.io", "MongoDB", "Docker"],
+      title: "Customer Digital Account Experience",
+      description: "Empowered Ford/Lincoln customers with seamless onboarding, personalization, and smart vehicle management across all digital touchpoints, serving millions of users.",
+      image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=800&q=80",
+      technologies: ["Product Strategy", "API Integration", "Customer Experience", "Cross-platform", "Agile"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "Analytics Dashboard",
-      description: "Real-time analytics dashboard for monitoring business metrics. Features interactive charts, data visualization, and automated reporting capabilities.",
+      title: "Enterprise B2B/B2C Platform",
+      description: "Drove successful product launches for ServiceLink's enterprise platform, leading A/B tests and implementing KPI frameworks that improved conversion rates across multiple user segments.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+      technologies: ["Product Management", "A/B Testing", "Enterprise Solutions", "KPI Management", "Prototyping"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      title: "Customer Analytics Platform",
+      description: "Increased client profits by 15% using advanced Customer Analytics to predict customer segments and behavior patterns for telecommunications industry clients.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-      technologies: ["Vue.js", "Python", "D3.js", "FastAPI", "Redis"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Mobile Banking App",
-      description: "Secure mobile banking application with biometric authentication, transaction history, bill payments, and investment tracking features.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
-      technologies: ["React Native", "Node.js", "JWT", "Plaid API", "AWS"],
+      technologies: ["Data Analytics", "Predictive Modeling", "Customer Segmentation", "Business Intelligence", "ROI Optimization"],
       liveUrl: "#",
       githubUrl: "#"
     }
@@ -47,7 +47,7 @@ const ProjectsSection = () => {
               Featured Projects
             </h2>
             <p className="text-lg text-muted-foreground">
-              Some of my recent work and side projects
+              Key product initiatives and achievements
             </p>
           </div>
 

@@ -41,18 +41,18 @@ const ContactSection = () => {
   const contactInfo = [
     {
       title: "Email",
-      value: "john.developer@email.com",
-      link: "mailto:john.developer@email.com"
-    },
-    {
-      title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "arushi.mishra@email.com",
+      link: "mailto:arushi.mishra@email.com"
     },
     {
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Remote / Michigan",
       link: "#"
+    },
+    {
+      title: "LinkedIn",
+      value: "/in/arushi-mishra/",
+      link: "https://www.linkedin.com/in/arushi-mishra/"
     }
   ];
 

@@ -4,37 +4,37 @@ import { Progress } from "@/components/ui/progress";
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: "Product Management",
       skills: [
-        { name: "React/Next.js", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "CSS/Tailwind", level: 88 },
-        { name: "Vue.js", level: 75 },
+        { name: "Product Strategy", level: 95 },
+        { name: "Roadmapping", level: 92 },
+        { name: "Agile/Scrum", level: 90 },
+        { name: "A/B Testing", level: 88 },
       ]
     },
     {
-      title: "Backend Development",
+      title: "AI & Personalization",
       skills: [
-        { name: "Node.js", level: 92 },
-        { name: "Python", level: 85 },
-        { name: "PostgreSQL", level: 88 },
-        { name: "MongoDB", level: 82 },
+        { name: "AI-Powered Features", level: 90 },
+        { name: "Personalization", level: 92 },
+        { name: "Predictive Analytics", level: 85 },
+        { name: "Customer Segmentation", level: 88 },
       ]
     },
     {
-      title: "DevOps & Tools",
+      title: "Data & Analytics",
       skills: [
-        { name: "AWS/Cloud", level: 85 },
-        { name: "Docker", level: 80 },
-        { name: "Git/GitHub", level: 95 },
-        { name: "CI/CD", level: 78 },
+        { name: "Data Analytics", level: 88 },
+        { name: "KPI Management", level: 90 },
+        { name: "Customer Analytics", level: 85 },
+        { name: "Business Intelligence", level: 82 },
       ]
     }
   ];
 
   const tools = [
-    "React", "TypeScript", "Node.js", "Python", "AWS", "Docker", 
-    "PostgreSQL", "MongoDB", "Git", "Figma", "VS Code", "Tailwind CSS"
+    "Product Strategy", "AI/ML", "Data Analytics", "Agile", "Scrum", "Customer Experience", 
+    "A/B Testing", "Personalization", "API Development", "Cross-functional Leadership", "KPI Management", "Strategic Planning"
   ];
 
   return (
@@ -46,7 +46,7 @@ const SkillsSection = () => {
               Skills & Expertise
             </h2>
             <p className="text-lg text-muted-foreground">
-              Technologies and tools I work with
+              Product management skills and technical competencies
             </p>
           </div>
 

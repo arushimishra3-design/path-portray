@@ -3,36 +3,47 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Senior Full-Stack Developer",
-      company: "Tech Innovation Corp",
-      period: "2022 - Present",
-      description: "Lead development of scalable web applications using React, Node.js, and AWS. Mentored junior developers and implemented CI/CD pipelines that reduced deployment time by 60%.",
+      title: "Product Leader - Messaging and Personalization",
+      company: "Ford Motor Company",
+      period: "Mar 2023 - Present",
+      description: "Leading the vision and roadmap for intelligent, customer-first messaging across FordPass mobile and IVI platforms, enabling scalable, real-time engagement across multiple channels.",
       achievements: [
-        "Architected microservices handling 1M+ daily requests",
-        "Led team of 5 developers on enterprise projects",
-        "Improved application performance by 40%"
+        "Built Ford's next-gen AI-powered messaging infrastructure for personalization and targeting",
+        "Delivered measurable business impact through increased CTR and conversion rates",
+        "Championed customer trust through timely, relevant, and actionable messaging"
       ]
     },
     {
-      title: "Frontend Developer",
-      company: "Digital Solutions Ltd",
-      period: "2020 - 2022",
-      description: "Developed responsive web applications and collaborated with UX/UI teams to create intuitive user interfaces. Specialized in React ecosystem and modern CSS frameworks.",
+      title: "Senior Product Manager - Customer Digital Account",
+      company: "Ford Motor Company",
+      period: "Aug 2021 - Jun 2024",
+      description: "Empowered Ford/Lincoln Way customers with seamless onboarding experience, personalization, and management of smart vehicles across all digital touchpoints.",
       achievements: [
-        "Built 15+ responsive web applications",
-        "Reduced page load times by 50%",
-        "Implemented automated testing suite"
+        "Led teams to build scalable API solutions integrating across multiple platforms",
+        "Drove customer engagement and retention through innovative app/web features",
+        "Led 3rd party partnerships with Google, Amazon, and other tech giants"
       ]
     },
     {
-      title: "Junior Web Developer",
-      company: "StartUp Ventures",
-      period: "2019 - 2020",
-      description: "Started my professional journey building dynamic websites and learning modern development practices. Gained experience with full-stack development and agile methodologies.",
+      title: "Senior Product Manager - Enterprise, B2B, B2C",
+      company: "ServiceLink",
+      period: "Nov 2019 - Aug 2021",
+      description: "Drove successful product launches and led A/B tests & KPI settings across enterprise, B2B, and B2C products in the real estate technology space.",
       achievements: [
-        "Delivered 20+ client projects on time",
-        "Learned React, Node.js, and database design",
-        "Contributed to open-source projects"
+        "Led and mentored multiple product quads in Agile environment",
+        "Collaborated with engineering, portfolio and design teams for optimal product experience",
+        "Owned product roadmap and rapid iteration for all applications"
+      ]
+    },
+    {
+      title: "Product Data Analyst - Telecommunications",
+      company: "Wipro Limited",
+      period: "Mar 2013 - Mar 2016",
+      description: "Analyzed customer data and billing systems for telecommunications clients, focusing on customer analytics and data migration projects.",
+      achievements: [
+        "Increased client profits by 15% using Customer Analytics to predict late payment segments",
+        "Led data migration for 160K+ customers across all segments and products",
+        "Implemented predictive models for customer behavior analysis"
       ]
     }
   ];
