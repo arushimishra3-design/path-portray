@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from '@emailjs/browser';
+import { emailjsConfig } from "@/lib/emailjs-config";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -19,16 +21,38 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
-    });
-    
-    setFormData({ name: "", email: "", subject: "", message: "" });
-    setIsSubmitting(false);
+    try {
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
+        {
+          to_email: emailjsConfig.toEmail,
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        emailjsConfig.publicKey
+      );
+      
+      if (result.status === 200) {
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      }
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      toast({
+        title: "Failed to send message",
+        description: "Please try again or contact me directly at arushi.mishra3@gmail.com",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -41,12 +65,12 @@ const ContactSection = () => {
   const contactInfo = [
     {
       title: "Email",
-      value: "arushi.mishra@email.com",
-      link: "mailto:arushi.mishra@email.com"
+      value: "arushimishra3@gmail.com",
+      link: "mailto:arushimishra3@gmail.com"
     },
     {
       title: "Location",
-      value: "Remote / Michigan",
+      value: "Seattle, WA",
       link: "#"
     },
     {
@@ -57,7 +81,7 @@ const ContactSection = () => {
   ];
 
   const socialLinks = [
-    { name: "LinkedIn", url: "#", icon: "💼" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/arushi-mishra/", icon: "💼" },
     { name: "GitHub", url: "#", icon: "🔗" },
     { name: "Twitter", url: "#", icon: "🐦" },
     { name: "Portfolio", url: "#", icon: "🌐" }
