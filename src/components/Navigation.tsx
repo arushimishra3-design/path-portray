@@ -52,7 +52,7 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <div className="font-bold text-xl text-primary">Portfolio</div>
+          <div className="font-bold text-xl text-primary">Arushi Mishra</div>
           
           <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (

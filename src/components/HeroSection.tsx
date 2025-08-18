@@ -25,11 +25,11 @@ const HeroSection = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
-            John Developer
+            Arushi Mishra
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Full-Stack Developer & UI/UX Designer crafting exceptional digital experiences 
-            with modern technologies and thoughtful design.
+            Product Leader specializing in AI-Powered Experiences, Personalization & Platform Growth. 
+            Carnegie Mellon & Stanford Alum driving innovation at Ford Motor Company.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

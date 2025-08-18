@@ -2,10 +2,10 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const AboutSection = () => {
   const stats = [
-    { number: "5+", label: "Years Experience" },
-    { number: "50+", label: "Projects Completed" },
-    { number: "15+", label: "Happy Clients" },
-    { number: "100%", label: "Success Rate" },
+    { number: "8+", label: "Years Experience" },
+    { number: "15+", label: "Product Launches" },
+    { number: "160K+", label: "Users Impacted" },
+    { number: "15%", label: "Profit Increase" },
   ];
 
   return (
@@ -24,26 +24,26 @@ const AboutSection = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-foreground">
-                I'm a dedicated full-stack developer with over 5 years of experience 
-                building scalable web applications and user-centered digital experiences. 
-                My journey in tech started with a fascination for problem-solving and 
-                has evolved into a passion for crafting elegant solutions.
+                I'm a passionate Product Leader with 8+ years of experience driving innovation 
+                in AI-powered experiences and personalization. Currently at Ford Motor Company, 
+                I lead the vision and roadmap for intelligent, customer-first messaging across 
+                FordPass mobile and In-Vehicle platforms.
               </p>
               
               <p className="text-lg leading-relaxed text-foreground">
-                I specialize in modern JavaScript frameworks, cloud technologies, 
-                and responsive design. When I'm not coding, you'll find me exploring 
-                new technologies, contributing to open-source projects, or mentoring 
-                aspiring developers.
+                My expertise spans product strategy, data analytics, and cross-functional 
+                leadership. I've successfully increased customer engagement, drove 15% profit 
+                increases through analytics, and mentored product teams while building scalable 
+                platforms that serve hundreds of thousands of users.
               </p>
 
               <div className="flex flex-wrap gap-3 pt-4">
-                {["React", "TypeScript", "Node.js", "Python", "AWS", "Docker"].map((tech) => (
+                {["Product Management", "AI & Personalization", "Data Analytics", "Strategy", "Agile", "Customer Experience"].map((skill) => (
                   <span
-                    key={tech}
+                    key={skill}
                     className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium"
                   >
-                    {tech}
+                    {skill}
                   </span>
                 ))}
               </div>
