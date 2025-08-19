@@ -83,11 +83,11 @@ const SkillsSection = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="grid grid-cols-1 gap-2">
+                  <div className="space-y-3">
                     {category.skills.map((skill, skillIndex) => (
                       <div 
                         key={skillIndex} 
-                        className="px-3 py-2 bg-muted/30 rounded-md text-center"
+                        className="py-2 px-3 bg-accent/5 rounded-lg border-l-2 border-accent/20"
                       >
                         <span className="text-sm font-medium text-foreground">
                           {skill}
