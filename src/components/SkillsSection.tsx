@@ -1,33 +1,32 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 
 const SkillsSection = () => {
   const skillCategories = [
     {
       title: "Product Management",
       skills: [
-        { name: "Product Strategy", level: 95 },
-        { name: "Roadmapping", level: 92 },
-        { name: "Agile/Scrum", level: 90 },
-        { name: "A/B Testing", level: 88 },
+        "Product Strategy",
+        "Roadmapping", 
+        "Agile/Scrum",
+        "A/B Testing",
       ]
     },
     {
-      title: "AI & Personalization",
+      title: "AI & Personalization", 
       skills: [
-        { name: "AI-Powered Features", level: 90 },
-        { name: "Personalization", level: 92 },
-        { name: "Predictive Analytics", level: 85 },
-        { name: "Customer Segmentation", level: 88 },
+        "AI-Powered Features",
+        "Personalization",
+        "Predictive Analytics", 
+        "Customer Segmentation",
       ]
     },
     {
       title: "Data & Analytics",
       skills: [
-        { name: "Data Analytics", level: 88 },
-        { name: "KPI Management", level: 90 },
-        { name: "Customer Analytics", level: 85 },
-        { name: "Business Intelligence", level: 82 },
+        "Data Analytics",
+        "KPI Management",
+        "Customer Analytics",
+        "Business Intelligence",
       ]
     }
   ];
@@ -84,21 +83,12 @@ const SkillsSection = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-4">
+                  <div className="space-y-2">
                     {category.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex} className="space-y-2">
-                        <div className="flex justify-between items-center">
-                          <span className="text-sm font-medium text-foreground">
-                            {skill.name}
-                          </span>
-                          <span className="text-xs text-muted-foreground">
-                            {skill.level}%
-                          </span>
-                        </div>
-                        <Progress 
-                          value={skill.level} 
-                          className="h-2"
-                        />
+                      <div key={skillIndex}>
+                        <span className="text-sm font-medium text-foreground">
+                          {skill}
+                        </span>
                       </div>
                     ))}
                   </div>
