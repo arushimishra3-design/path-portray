@@ -8,9 +8,9 @@ import { useState } from "react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Ford AI-Powered Messaging Platform",
-      description: "Led development of Ford's next-gen AI-powered messaging infrastructure driving personalization, targeting, and timing precision across FordPass mobile and In-Vehicle platforms.",
-      detailedDescription: "As Lead Product Manager, I spearheaded the development of Ford's revolutionary AI-powered messaging platform that transformed how Ford communicates with customers. The platform leveraged machine learning algorithms to deliver personalized messages at optimal times across multiple touchpoints including the FordPass mobile app and in-vehicle systems. Key achievements included implementing real-time behavioral analysis, developing advanced segmentation models, and creating dynamic content optimization that resulted in 40% higher engagement rates and 25% improvement in customer satisfaction scores.",
+      title: "Ford Messaging Platform Evolution",
+      description: "Evolved Ford's messaging infrastructure from legacy systems to next-gen AI-powered platform, driving personalization, targeting, and timing precision across FordPass mobile and In-Vehicle platforms.",
+      detailedDescription: "As Lead Product Manager, I spearheaded the complete evolution of Ford's messaging infrastructure, transitioning from traditional legacy messaging systems to a revolutionary AI-powered platform. This transformation involved modernizing existing messaging workflows while implementing cutting-edge machine learning algorithms for personalized customer communications. The project included migrating legacy batch processing systems, implementing real-time behavioral analysis, developing advanced segmentation models, and creating dynamic content optimization across multiple touchpoints including the FordPass mobile app and in-vehicle systems. This comprehensive approach resulted in 40% higher engagement rates and 25% improvement in customer satisfaction scores.",
       impact: "Increased customer engagement by 40%, improved message relevance by 60%, and reduced customer support queries by 30% through proactive messaging.",
       challenges: "Integrating disparate data sources, ensuring real-time processing at scale, and maintaining privacy compliance across multiple jurisdictions.",
       image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80",
