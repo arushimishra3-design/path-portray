@@ -32,9 +32,31 @@ const SkillsSection = () => {
     }
   ];
 
-  const tools = [
-    "Product Strategy", "AI/ML", "Data Analytics", "Agile", "Scrum", "Customer Experience", 
-    "A/B Testing", "Personalization", "API Development", "Cross-functional Leadership", "KPI Management", "Strategic Planning"
+  const toolCategories = [
+    {
+      category: "Vertex AI",
+      tools: ["LLMs", "Document AI", "Embeddings", "Pipelines"]
+    },
+    {
+      category: "GCP",
+      tools: ["BigQuery (incl. vector search)", "Pub/Sub", "Cloud Run", "Cloud Storage"]
+    },
+    {
+      category: "Data & Analytics",
+      tools: ["SQL (BigQuery)", "Python", "Amplitude (funnels, cohorts, A/B testing)"]
+    },
+    {
+      category: "Experimentation",
+      tools: ["A/B tests", "Holdouts", "Online metrics", "Offline model evaluation"]
+    },
+    {
+      category: "Messaging & APIs",
+      tools: ["Push", "In-app", "Email", "SMS", "REST APIs", "Webhooks", "Event-driven design"]
+    },
+    {
+      category: "Privacy & Trust",
+      tools: ["Consent and preference management", "GDPR/CCPA compliance"]
+    }
   ];
 
   return (
@@ -92,14 +114,23 @@ const SkillsSection = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap justify-center gap-3">
-                {tools.map((tool, index) => (
-                  <span
-                    key={index}
-                    className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium hover:bg-accent/20 transition-colors duration-200 cursor-default"
-                  >
-                    {tool}
-                  </span>
+              <div className="space-y-6">
+                {toolCategories.map((category, categoryIndex) => (
+                  <div key={categoryIndex} className="space-y-3">
+                    <h4 className="text-sm font-semibold text-primary uppercase tracking-wide">
+                      {category.category}
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {category.tools.map((tool, toolIndex) => (
+                        <span
+                          key={toolIndex}
+                          className="px-3 py-1.5 bg-accent/10 text-accent rounded-full text-xs font-medium hover:bg-accent/20 transition-colors duration-200 cursor-default"
+                        >
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             </CardContent>
