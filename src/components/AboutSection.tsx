@@ -29,7 +29,7 @@ const AboutSection = () => {
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-foreground">
                 I'm a Product Leader with 10+ years building AI-powered experiences. I've led intelligent, 
-                cross-channel messaging for a Fortune 100 consumer platform across mobile and in-vehicle. 
+                cross-channel messaging for a Fortune 100 consumer platform across mobile, web and in-vehicle. 
                 My experience spans platform strategy and front-end, customer-facing apps across both B2B and B2C.
               </p>
               
