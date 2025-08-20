@@ -63,20 +63,14 @@ const AboutSection = () => {
                        <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                        Crisp storytelling that aligns teams
                      </li>
+                     <li className="flex items-start gap-2">
+                       <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                       Customer empathy
+                     </li>
                    </ul>
                  </div>
                </div>
 
-              <div className="flex flex-wrap gap-3 pt-4">
-                {["Data Analytics", "Strategy", "Agile", "Customer empathy"].map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
             </div>
 
             <div className="grid grid-cols-2 gap-6">
