@@ -31,8 +31,7 @@ const HeroSection = () => {
             (she/her)
           </p>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Product Leader specializing in AI-Powered Experiences, Personalization & Platform Growth. 
-            Carnegie Mellon & Stanford Alum driving innovation at Ford Motor Company.
+            Product Leader who turns data into delight. 10+ years building intelligent experiences that scale—from startups to 14M+ user platforms.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
