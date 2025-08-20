@@ -64,78 +64,95 @@ const SkillsSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
-              Skills & Expertise
+              Skills & Technologies
             </h2>
             <p className="text-lg text-muted-foreground">
-              Product management skills and technical competencies
+              Product management expertise and technical competencies
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {skillCategories.map((category, index) => (
-              <Card 
-                key={index} 
-                className="shadow-soft hover:shadow-medium transition-all duration-300 group"
-              >
-                <CardHeader>
-                  <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors duration-200">
-                    {category.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    {category.skills.map((skill, skillIndex) => (
-                      <div 
-                        key={skillIndex} 
-                        className="py-2 px-3 bg-accent/5 rounded-lg border-l-2 border-accent/20"
-                      >
-                        <span className="text-sm font-medium text-foreground">
-                          {skill}
-                        </span>
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Skills & Expertise */}
+            <div>
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-primary mb-2">
+                  Skills & Expertise
+                </h3>
+                <p className="text-muted-foreground">
+                  Product management competencies
+                </p>
+              </div>
+              
+              <div className="space-y-6">
+                {skillCategories.map((category, index) => (
+                  <Card 
+                    key={index} 
+                    className="shadow-soft hover:shadow-medium transition-all duration-300 group"
+                  >
+                    <CardHeader>
+                      <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors duration-200">
+                        {category.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-3">
+                        {category.skills.map((skill, skillIndex) => (
+                          <div 
+                            key={skillIndex} 
+                            className="py-2 px-3 bg-accent/5 rounded-lg border-l-2 border-accent/20"
+                          >
+                            <span className="text-sm font-medium text-foreground">
+                              {skill}
+                            </span>
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
 
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-primary mb-2">
-              Technologies & Tools
-            </h3>
-            <p className="text-muted-foreground">
-              Technical stack and platforms I work with
-            </p>
-          </div>
-          
-          <div className="grid lg:grid-cols-3 gap-8">
-            {toolCategories.map((category, categoryIndex) => (
-              <Card 
-                key={categoryIndex} 
-                className="shadow-soft hover:shadow-medium transition-all duration-300 group"
-              >
-                <CardHeader>
-                  <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors duration-200">
-                    {category.category}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    {category.tools.map((tool, toolIndex) => (
-                      <div 
-                        key={toolIndex} 
-                        className="py-2 px-3 bg-accent/5 rounded-lg border-l-2 border-accent/20"
-                      >
-                        <span className="text-sm font-medium text-foreground">
-                          {tool}
-                        </span>
+            {/* Technologies & Tools */}
+            <div>
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-primary mb-2">
+                  Technologies & Tools
+                </h3>
+                <p className="text-muted-foreground">
+                  Technical stack and platforms
+                </p>
+              </div>
+              
+              <div className="space-y-6">
+                {toolCategories.map((category, categoryIndex) => (
+                  <Card 
+                    key={categoryIndex} 
+                    className="shadow-soft hover:shadow-medium transition-all duration-300 group"
+                  >
+                    <CardHeader>
+                      <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors duration-200">
+                        {category.category}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-3">
+                        {category.tools.map((tool, toolIndex) => (
+                          <div 
+                            key={toolIndex} 
+                            className="py-2 px-3 bg-accent/5 rounded-lg border-l-2 border-accent/20"
+                          >
+                            <span className="text-sm font-medium text-foreground">
+                              {tool}
+                            </span>
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
