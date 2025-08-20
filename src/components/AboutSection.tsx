@@ -42,7 +42,7 @@ const AboutSection = () => {
                {/* Integrated Strengths - Inline Badge Style */}
                <div className="mt-6 p-6 bg-gradient-to-r from-background via-accent/5 to-background border-l-4 border-primary rounded-r-xl">
                  <p className="text-lg leading-relaxed text-foreground mb-4">
-                   <span className="font-semibold text-primary">Core strengths:</span> Building with
+                   <span className="font-semibold text-primary">Core strengths:</span>
                  </p>
                  <div className="flex flex-wrap gap-2">
                    {[
