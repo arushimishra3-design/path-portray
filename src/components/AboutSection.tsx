@@ -139,23 +139,14 @@ const AboutSection = () => {
                     <div className="bg-card/50 p-6 rounded-lg border border-border/50">
                       <h4 className="text-xl font-semibold text-primary mb-4">Here's what I've learned along the way:</h4>
                       <ul className="space-y-3 text-foreground">
-                        <li className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></span>
-                          <span className="text-lg">
-                            <strong>Customer behavior is the clearest signal.</strong> Follow that, and your roadmap won't drift.
-                          </span>
+                        <li className="text-lg">
+                          <strong>Customer behavior is the clearest signal.</strong> Follow that, and your roadmap won't drift.
                         </li>
-                        <li className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></span>
-                          <span className="text-lg">
-                            <strong>Good platforms empower teams.</strong> Not just to build faster—but to build smarter.
-                          </span>
+                        <li className="text-lg">
+                          <strong>Good platforms empower teams.</strong> Not just to build faster—but to build smarter.
                         </li>
-                        <li className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></span>
-                          <span className="text-lg">
-                            <strong>Simplicity wins.</strong> If your product feels heavy, your user is carrying it, not you.
-                          </span>
+                        <li className="text-lg">
+                          <strong>Simplicity wins.</strong> If your product feels heavy, your user is carrying it, not you.
                         </li>
                       </ul>
                     </div>
