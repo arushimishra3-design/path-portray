@@ -6,10 +6,10 @@ const AboutSection = () => {
   const [isPhilosophyExpanded, setIsPhilosophyExpanded] = useState(false);
   
   const stats = [
-    { number: "8+", label: "Years Experience" },
+    { number: "10+", label: "Years Experience" },
     { number: "15+", label: "Product Launches" },
-    { number: "160K+", label: "Users Impacted" },
-    { number: "15%", label: "Profit Increase" },
+    { number: "14M+", label: "Users Impacted" },
+    { number: "+10pts", label: "Engagement Lift" },
   ];
 
   return (
@@ -28,17 +28,17 @@ const AboutSection = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-foreground">
-                I'm a passionate Product Leader with 8+ years of experience driving innovation 
-                in AI-powered experiences and personalization. Currently at Ford Motor Company, 
-                I lead the vision and roadmap for intelligent, customer-first messaging across 
-                FordPass mobile and In-Vehicle platforms.
+                I'm a Product Leader with 10+ years building AI-powered experiences. I've led intelligent, 
+                cross-channel messaging for a Fortune 100 consumer platform across mobile and in-vehicle. 
+                My experience spans platform strategy and front-end, customer-facing apps across both B2B and B2C.
               </p>
               
               <p className="text-lg leading-relaxed text-foreground">
-                My expertise spans product strategy, data analytics, and cross-functional 
-                leadership. I've successfully increased customer engagement, drove 15% profit 
-                increases through analytics, and mentored product teams while building scalable 
-                platforms that serve hundreds of thousands of users.
+                Throughout my career, I've built and shipped contextual personalization, learning-to-rank 
+                recommendations, and NLP document automation. Strengths: product strategy, data-driven execution, 
+                and crisp storytelling that aligns teams. Results include stronger engagement, a 15% profit lift 
+                through analytics, and platforms running at multi-million-user scale. I mentor PMs, shape roadmaps, 
+                and turn ambiguity into systems that ship.
               </p>
 
               <div className="flex flex-wrap gap-3 pt-4">
@@ -82,8 +82,7 @@ const AboutSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="flex items-center justify-between relative z-10">
                   <div className="text-left">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-3 h-3 bg-gradient-to-r from-primary to-accent rounded-full animate-pulse"></div>
+                    <div className="mb-3">
                       <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                         My Product Philosophy
                       </h3>
@@ -138,17 +137,17 @@ const AboutSection = () => {
 
                     <div className="bg-card/50 p-6 rounded-lg border border-border/50">
                       <h4 className="text-xl font-semibold text-primary mb-4">Here's what I've learned along the way:</h4>
-                      <ul className="space-y-3 text-foreground">
-                        <li className="text-lg">
+                      <div className="space-y-3 text-foreground">
+                        <div className="text-lg">
                           <strong>Customer behavior is the clearest signal.</strong> Follow that, and your roadmap won't drift.
-                        </li>
-                        <li className="text-lg">
+                        </div>
+                        <div className="text-lg">
                           <strong>Good platforms empower teams.</strong> Not just to build faster—but to build smarter.
-                        </li>
-                        <li className="text-lg">
+                        </div>
+                        <div className="text-lg">
                           <strong>Simplicity wins.</strong> If your product feels heavy, your user is carrying it, not you.
-                        </li>
-                      </ul>
+                        </div>
+                      </div>
                     </div>
 
                     <div className="text-center mt-8 p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg border border-primary/20">

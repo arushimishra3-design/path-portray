@@ -123,15 +123,15 @@ const ContactSection = () => {
       title: "Location",
       value: "Seattle, WA",
       link: "#"
+    },
+    {
+      title: "LinkedIn",
+      value: "arushi-mishra",
+      link: "https://www.linkedin.com/in/arushi-mishra/"
     }
   ];
 
-  const socialLinks = [
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/arushi-mishra/", icon: "in" },
-    { name: "GitHub", url: "#", icon: "🔗" },
-    { name: "Twitter", url: "#", icon: "🐦" },
-    { name: "Portfolio", url: "#", icon: "🌐" }
-  ];
+
 
   return (
     <section id="contact" className="py-20 bg-gradient-card">
@@ -232,67 +232,27 @@ const ContactSection = () => {
               </CardContent>
             </Card>
 
-            {/* Contact Info */}
-            <div className="space-y-8">
-              <Card className="shadow-soft">
-                <CardHeader>
-                  <CardTitle className="text-xl text-primary">
-                    Contact Information
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  {contactInfo.map((info, index) => (
-                    <div key={index} className="flex justify-between items-center p-3 rounded-lg hover:bg-accent/5 transition-colors duration-200">
-                      <span className="font-medium text-foreground">{info.title}</span>
-                      <a 
-                        href={info.link} 
-                        className="text-accent hover:text-accent-hover transition-colors duration-200"
-                      >
-                        {info.value}
-                      </a>
-                    </div>
-                  ))}
-                </CardContent>
-              </Card>
-
-              <Card className="shadow-soft">
-                <CardHeader>
-                  <CardTitle className="text-xl text-primary">
-                    Follow Me
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid grid-cols-2 gap-4">
-                    {socialLinks.map((social, index) => (
-                      <a
-                        key={index}
-                        href={social.url}
-                        className={`flex items-center gap-3 p-3 rounded-lg transition-all duration-200 group ${
-                          social.name === "LinkedIn" 
-                            ? "bg-blue-600 hover:bg-blue-700 text-white" 
-                            : "bg-accent/5 hover:bg-accent/10"
-                        }`}
-                      >
-                        {social.name === "LinkedIn" ? (
-                          <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
-                            <span className="text-blue-600 font-bold text-sm">in</span>
-                          </div>
-                        ) : (
-                          <span className="text-xl">{social.icon}</span>
-                        )}
-                        <span className={`font-medium transition-colors duration-200 ${
-                          social.name === "LinkedIn" 
-                            ? "text-white group-hover:text-white" 
-                            : "text-foreground group-hover:text-accent"
-                        }`}>
-                          {social.name}
-                        </span>
-                      </a>
-                    ))}
+                        {/* Contact Info */}
+            <Card className="shadow-soft">
+              <CardHeader>
+                <CardTitle className="text-xl text-primary">
+                  Contact Information
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                {contactInfo.map((info, index) => (
+                  <div key={index} className="flex justify-between items-center p-3 rounded-lg hover:bg-accent/5 transition-colors duration-200">
+                    <span className="font-medium text-foreground">{info.title}</span>
+                    <a 
+                      href={info.link} 
+                      className="text-accent hover:text-accent-hover transition-colors duration-200"
+                    >
+                      {info.value}
+                    </a>
                   </div>
-                </CardContent>
-              </Card>
-            </div>
+                ))}
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>

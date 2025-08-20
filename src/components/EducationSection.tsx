@@ -1,6 +1,10 @@
-import { GraduationCap, Calendar, Award, Users } from "lucide-react";
+import { GraduationCap, Calendar, Award, Users, ChevronDown, ChevronUp } from "lucide-react";
+import { useState } from "react";
 
 const EducationSection = () => {
+  const [expandedCoursework, setExpandedCoursework] = useState<number | null>(null);
+  const [expandedActivities, setExpandedActivities] = useState<number | null>(null);
+  
   const education = [
     {
       institution: "Carnegie Mellon University - Heinz College",
@@ -8,6 +12,30 @@ const EducationSection = () => {
       duration: "2016 - 2017",
       major: "Data Analytics and Product Management",
       skills: ["Data Science", "Product Management", "Coding with R/Python"],
+      coursework: [
+        "Data Mining Statistics for IT Managers",
+        "Digital Marketing Analytics",
+        "Distributed Systems",
+        "Data-Focused Python",
+        "Economic Analysis",
+        "Managing Disruptive Technologies",
+        "Digital Transformation",
+        "Decision Making Under Uncertainty",
+        "Organizational Design & Implementation",
+        "Database Management",
+        "Financial Accounting",
+        "Object-Oriented Programming in Java",
+        "Principles of Finance",
+        "Professional Speaking",
+        "Business Process Modeling",
+        "Management Consulting",
+        "Professional Writing",
+        "Object-Oriented Analysis & Design"
+      ],
+      activities: [
+        "Strategy Consultant at Neustar for risk management",
+        "Editorial Writer for The Tartan (College Newspaper)"
+      ],
       type: "Masters"
     },
     {
@@ -102,24 +130,67 @@ const EducationSection = () => {
                     </div>
                   )}
 
-                  {edu.activities && (
+                  {edu.coursework && (
                     <div>
-                      <div className="flex items-center gap-2 mb-3">
+                      <button
+                        onClick={() => setExpandedCoursework(expandedCoursework === index ? null : index)}
+                        className="flex items-center gap-2 mb-3 hover:text-accent transition-colors duration-200 group"
+                      >
+                        <GraduationCap className="w-4 h-4 text-accent" />
+                        <p className="text-sm text-muted-foreground font-medium group-hover:text-accent">
+                          Coursework:
+                        </p>
+                        <div className="text-accent group-hover:scale-110 transition-transform duration-200">
+                          {expandedCoursework === index ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                        </div>
+                      </button>
+                      
+                      <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        expandedCoursework === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                      }`}>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                          {edu.coursework.map((course, courseIndex) => (
+                            <div
+                              key={courseIndex}
+                              className="text-sm text-muted-foreground pl-4 border-l-2 border-primary/30"
+                            >
+                              {course}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {edu.activities && (
+                    <div className="mt-4">
+                      <button
+                        onClick={() => setExpandedActivities(expandedActivities === index ? null : index)}
+                        className="flex items-center gap-2 mb-3 hover:text-accent transition-colors duration-200 group"
+                      >
                         <Users className="w-4 h-4 text-accent" />
-                        <p className="text-sm text-muted-foreground font-medium">
+                        <p className="text-sm text-muted-foreground font-medium group-hover:text-accent">
                           Activities and Achievements:
                         </p>
+                        <div className="text-accent group-hover:scale-110 transition-transform duration-200">
+                          {expandedActivities === index ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                        </div>
+                      </button>
+                      
+                      <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        expandedActivities === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                      }`}>
+                        <div className="space-y-2">
+                          {edu.activities.map((activity, actIndex) => (
+                            <div
+                              key={actIndex}
+                              className="text-sm text-muted-foreground pl-4 border-l-2 border-accent/30 py-1"
+                            >
+                              {activity}
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                      <ul className="space-y-2">
-                        {edu.activities.map((activity, actIndex) => (
-                          <li
-                            key={actIndex}
-                            className="text-sm text-muted-foreground pl-4 border-l-2 border-accent/30"
-                          >
-                            {activity}
-                          </li>
-                        ))}
-                      </ul>
                     </div>
                   )}
                 </div>
