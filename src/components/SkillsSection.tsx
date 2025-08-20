@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const SkillsSection = () => {
   const skillCategories = [
@@ -56,69 +57,56 @@ const SkillsSection = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            {/* Skills & Expertise */}
-            <div>
-              <h3 className="text-xl font-bold text-primary mb-4 text-center">
-                Skills & Expertise
-              </h3>
-              
-              <div className="space-y-4">
+          <Tabs defaultValue="skills" className="w-full">
+            <TabsList className="grid w-full grid-cols-2 mb-6">
+              <TabsTrigger value="skills">Skills & Expertise</TabsTrigger>
+              <TabsTrigger value="tools">Technologies & Tools</TabsTrigger>
+            </TabsList>
+            
+            <TabsContent value="skills" className="mt-0">
+              <div className="grid md:grid-cols-3 gap-3">
                 {skillCategories.map((category, index) => (
-                  <Card key={index} className="shadow-soft">
-                    <CardHeader className="pb-2">
-                      <CardTitle className="text-base text-primary">
-                        {category.title}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="pt-0">
-                      <div className="flex flex-wrap gap-2">
-                        {category.skills.map((skill, skillIndex) => (
-                          <span 
-                            key={skillIndex} 
-                            className="px-2 py-1 bg-accent/10 text-accent rounded text-xs font-medium"
-                          >
-                            {skill}
-                          </span>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <div key={index} className="bg-card border rounded-lg p-4">
+                    <h4 className="text-sm font-semibold text-primary mb-2">
+                      {category.title}
+                    </h4>
+                    <div className="flex flex-wrap gap-1">
+                      {category.skills.map((skill, skillIndex) => (
+                        <span 
+                          key={skillIndex} 
+                          className="px-2 py-1 bg-accent/10 text-accent rounded text-xs font-medium"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
-            </div>
-
-            {/* Technologies & Tools */}
-            <div>
-              <h3 className="text-xl font-bold text-primary mb-4 text-center">
-                Technologies & Tools
-              </h3>
-              
-              <div className="space-y-4">
+            </TabsContent>
+            
+            <TabsContent value="tools" className="mt-0">
+              <div className="grid md:grid-cols-3 gap-3">
                 {toolCategories.map((category, categoryIndex) => (
-                  <Card key={categoryIndex} className="shadow-soft">
-                    <CardHeader className="pb-2">
-                      <CardTitle className="text-base text-primary">
-                        {category.category}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="pt-0">
-                      <div className="flex flex-wrap gap-2">
-                        {category.tools.map((tool, toolIndex) => (
-                          <span 
-                            key={toolIndex} 
-                            className="px-2 py-1 bg-accent/10 text-accent rounded text-xs font-medium"
-                          >
-                            {tool}
-                          </span>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <div key={categoryIndex} className="bg-card border rounded-lg p-4">
+                    <h4 className="text-sm font-semibold text-primary mb-2">
+                      {category.category}
+                    </h4>
+                    <div className="flex flex-wrap gap-1">
+                      {category.tools.map((tool, toolIndex) => (
+                        <span 
+                          key={toolIndex} 
+                          className="px-2 py-1 bg-accent/10 text-accent rounded text-xs font-medium"
+                        >
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
-            </div>
-          </div>
+            </TabsContent>
+          </Tabs>
         </div>
       </div>
     </section>
