@@ -39,30 +39,28 @@ const AboutSection = () => {
                  and turn ambiguity into systems that ship.
                </p>
 
-               {/* Core Strengths - Elegant Banner Style */}
-               <div className="mt-8">
-                 <div className="bg-gradient-to-r from-primary/10 via-accent/5 to-primary/10 border border-primary/20 rounded-xl p-8 backdrop-blur-sm">
-                   <h4 className="text-xl font-bold text-primary mb-6 text-center">
-                     Core Strengths
-                   </h4>
-                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                     {[
-                       "Product strategy & execution",
-                       "AI & Personalization", 
-                       "Data-driven decision making",
-                       "Crisp storytelling that aligns teams",
-                       "Customer empathy"
-                     ].map((strength, index) => (
-                       <div 
-                         key={strength}
-                         className="flex items-center gap-3 p-3 rounded-lg bg-background/50 border border-border/30 hover-scale animate-fade-in"
-                         style={{ animationDelay: `${index * 0.1}s` }}
-                       >
-                         <div className="w-2 h-2 bg-gradient-to-r from-primary to-accent rounded-full flex-shrink-0"></div>
-                         <span className="text-foreground font-medium text-sm">{strength}</span>
-                       </div>
-                     ))}
-                   </div>
+               {/* Integrated Strengths - Inline Badge Style */}
+               <div className="mt-6 p-6 bg-gradient-to-r from-background via-accent/5 to-background border-l-4 border-primary rounded-r-xl">
+                 <p className="text-lg leading-relaxed text-foreground mb-4">
+                   <span className="font-semibold text-primary">Core strengths:</span> Building with
+                 </p>
+                 <div className="flex flex-wrap gap-2">
+                   {[
+                     "Product strategy & execution",
+                     "AI & Personalization", 
+                     "Data-driven decision making",
+                     "Crisp storytelling",
+                     "Customer empathy"
+                   ].map((strength, index) => (
+                     <span 
+                       key={strength}
+                       className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary border border-primary/20 rounded-full text-sm font-medium hover-scale animate-fade-in"
+                       style={{ animationDelay: `${index * 0.1}s` }}
+                     >
+                       <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                       {strength}
+                     </span>
+                   ))}
                  </div>
                </div>
 
