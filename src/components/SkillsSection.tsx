@@ -72,47 +72,6 @@ const SkillsSection = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Technologies & Tools */}
-            <div>
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-primary mb-2">
-                  Technologies & Tools
-                </h3>
-                <p className="text-muted-foreground">
-                  Technical stack and platforms
-                </p>
-              </div>
-              
-              <div className="space-y-6">
-                {toolCategories.map((category, categoryIndex) => (
-                  <Card 
-                    key={categoryIndex} 
-                    className="shadow-soft hover:shadow-medium transition-all duration-300 group"
-                  >
-                    <CardHeader>
-                      <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors duration-200">
-                        {category.category}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="space-y-3">
-                        {category.tools.map((tool, toolIndex) => (
-                          <div 
-                            key={toolIndex} 
-                            className="py-2 px-3 bg-accent/5 rounded-lg border-l-2 border-accent/20"
-                          >
-                            <span className="text-sm font-medium text-foreground">
-                              {tool}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-
             {/* Skills & Expertise */}
             <div>
               <div className="text-center mb-8">
@@ -144,6 +103,47 @@ const SkillsSection = () => {
                           >
                             <span className="text-sm font-medium text-foreground">
                               {skill}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            {/* Technologies & Tools */}
+            <div>
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-primary mb-2">
+                  Technologies & Tools
+                </h3>
+                <p className="text-muted-foreground">
+                  Technical stack and platforms
+                </p>
+              </div>
+              
+              <div className="space-y-6">
+                {toolCategories.map((category, categoryIndex) => (
+                  <Card 
+                    key={categoryIndex} 
+                    className="shadow-soft hover:shadow-medium transition-all duration-300 group"
+                  >
+                    <CardHeader>
+                      <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors duration-200">
+                        {category.category}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-3">
+                        {category.tools.map((tool, toolIndex) => (
+                          <div 
+                            key={toolIndex} 
+                            className="py-2 px-3 bg-accent/5 rounded-lg border-l-2 border-accent/20"
+                          >
+                            <span className="text-sm font-medium text-foreground">
+                              {tool}
                             </span>
                           </div>
                         ))}
