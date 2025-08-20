@@ -58,9 +58,19 @@ const SkillsSection = () => {
           </div>
 
           <Tabs defaultValue="skills" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 mb-6">
-              <TabsTrigger value="skills">Skills & Expertise</TabsTrigger>
-              <TabsTrigger value="tools">Technologies & Tools</TabsTrigger>
+            <TabsList className="grid w-full grid-cols-2 mb-6 h-12 bg-muted/50 p-1 rounded-lg">
+              <TabsTrigger 
+                value="skills" 
+                className="font-semibold text-sm hover:bg-background/80 hover:text-primary cursor-pointer transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md"
+              >
+                Skills & Expertise
+              </TabsTrigger>
+              <TabsTrigger 
+                value="tools" 
+                className="font-semibold text-sm hover:bg-background/80 hover:text-primary cursor-pointer transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md"
+              >
+                Technologies & Tools
+              </TabsTrigger>
             </TabsList>
             
             <TabsContent value="skills" className="mt-0">
