@@ -100,15 +100,18 @@ const AboutSection = () => {
                 <div className="pt-8 space-y-6">
                   <div className="prose prose-lg max-w-none text-foreground">
                     <p className="text-lg leading-relaxed">
-                      They anticipate intent, remove friction, and quietly guide the user toward value.
+                      If built right, Products anticipate intent, remove friction, and quietly guide the user toward value.
                     </p>
                     
                     <p className="text-lg leading-relaxed">
                       Whether I'm building onboarding flows, personalization systems, or platform infrastructure, 
-                      I care deeply about making products feel purposeful—not performative. My work has spanned 
+                      I care deeply about making products feel purposeful, not performative. My work has spanned 
                       everything from customer journeys and lifecycle engagement to AI-powered internal tools and 
-                      scalable experimentation frameworks. Across it all, my focus remains the same: drive real 
-                      outcomes by respecting real behavior.
+                      scalable experimentation frameworks.
+                    </p>
+
+                    <p className="text-lg leading-relaxed">
+                      Across it all, my focus remains the same: drive real outcomes by respecting real behavior.
                     </p>
 
                     <p className="text-lg leading-relaxed">
