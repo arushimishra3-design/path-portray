@@ -4,30 +4,15 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       title: "Product Management",
-      skills: [
-        "Product Strategy",
-        "Roadmapping", 
-        "Agile/Scrum",
-        "A/B Testing",
-      ]
+      skills: ["Product Strategy", "Roadmapping", "Agile/Scrum", "A/B Testing"]
     },
     {
       title: "AI & Personalization", 
-      skills: [
-        "AI-Powered Features",
-        "Personalization",
-        "Predictive Analytics", 
-        "Customer Segmentation",
-      ]
+      skills: ["AI-Powered Features", "Personalization", "Predictive Analytics", "Customer Segmentation"]
     },
     {
       title: "Data & Analytics",
-      skills: [
-        "Data Analytics",
-        "KPI Management",
-        "Customer Analytics",
-        "Business Intelligence",
-      ]
+      skills: ["Data Analytics", "KPI Management", "Customer Analytics", "Business Intelligence"]
     }
   ];
 
@@ -38,73 +23,63 @@ const SkillsSection = () => {
     },
     {
       category: "GCP",
-      tools: ["BigQuery (incl. vector search)", "Pub/Sub", "Cloud Run", "Cloud Storage"]
+      tools: ["BigQuery", "Pub/Sub", "Cloud Run", "Cloud Storage"]
     },
     {
       category: "Data & Analytics",
-      tools: ["SQL (BigQuery)", "Python", "Amplitude (funnels, cohorts, A/B testing)"]
+      tools: ["SQL", "Python", "Amplitude"]
     },
     {
       category: "Experimentation",
-      tools: ["A/B tests", "Holdouts", "Online metrics", "Offline model evaluation"]
+      tools: ["A/B tests", "Holdouts", "Online metrics", "Model evaluation"]
     },
     {
       category: "Messaging & APIs",
-      tools: ["Push", "In-app", "Email", "SMS", "REST APIs", "Webhooks", "Event-driven design"]
+      tools: ["Push", "In-app", "Email", "SMS", "REST APIs", "Webhooks"]
     },
     {
       category: "Privacy & Trust",
-      tools: ["Consent and preference management", "GDPR/CCPA compliance"]
+      tools: ["Consent management", "GDPR/CCPA compliance"]
     }
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-card">
+    <section id="skills" className="py-12 bg-gradient-card">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
               Skills & Technologies
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-muted-foreground">
               Product management expertise and technical competencies
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-8">
             {/* Skills & Expertise */}
             <div>
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-primary mb-2">
-                  Skills & Expertise
-                </h3>
-                <p className="text-muted-foreground">
-                  Product management competencies
-                </p>
-              </div>
+              <h3 className="text-xl font-bold text-primary mb-4 text-center">
+                Skills & Expertise
+              </h3>
               
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {skillCategories.map((category, index) => (
-                  <Card 
-                    key={index} 
-                    className="shadow-soft hover:shadow-medium transition-all duration-300 group"
-                  >
-                    <CardHeader>
-                      <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors duration-200">
+                  <Card key={index} className="shadow-soft">
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-base text-primary">
                         {category.title}
                       </CardTitle>
                     </CardHeader>
-                    <CardContent>
-                      <div className="space-y-3">
+                    <CardContent className="pt-0">
+                      <div className="flex flex-wrap gap-2">
                         {category.skills.map((skill, skillIndex) => (
-                          <div 
+                          <span 
                             key={skillIndex} 
-                            className="py-2 px-3 bg-accent/5 rounded-lg border-l-2 border-accent/20"
+                            className="px-2 py-1 bg-accent/10 text-accent rounded text-xs font-medium"
                           >
-                            <span className="text-sm font-medium text-foreground">
-                              {skill}
-                            </span>
-                          </div>
+                            {skill}
+                          </span>
                         ))}
                       </div>
                     </CardContent>
@@ -115,37 +90,27 @@ const SkillsSection = () => {
 
             {/* Technologies & Tools */}
             <div>
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-primary mb-2">
-                  Technologies & Tools
-                </h3>
-                <p className="text-muted-foreground">
-                  Technical stack and platforms
-                </p>
-              </div>
+              <h3 className="text-xl font-bold text-primary mb-4 text-center">
+                Technologies & Tools
+              </h3>
               
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {toolCategories.map((category, categoryIndex) => (
-                  <Card 
-                    key={categoryIndex} 
-                    className="shadow-soft hover:shadow-medium transition-all duration-300 group"
-                  >
-                    <CardHeader>
-                      <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors duration-200">
+                  <Card key={categoryIndex} className="shadow-soft">
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-base text-primary">
                         {category.category}
                       </CardTitle>
                     </CardHeader>
-                    <CardContent>
-                      <div className="space-y-3">
+                    <CardContent className="pt-0">
+                      <div className="flex flex-wrap gap-2">
                         {category.tools.map((tool, toolIndex) => (
-                          <div 
+                          <span 
                             key={toolIndex} 
-                            className="py-2 px-3 bg-accent/5 rounded-lg border-l-2 border-accent/20"
+                            className="px-2 py-1 bg-accent/10 text-accent rounded text-xs font-medium"
                           >
-                            <span className="text-sm font-medium text-foreground">
-                              {tool}
-                            </span>
-                          </div>
+                            {tool}
+                          </span>
                         ))}
                       </div>
                     </CardContent>
