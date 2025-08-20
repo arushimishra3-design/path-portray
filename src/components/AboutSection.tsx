@@ -39,9 +39,9 @@ const AboutSection = () => {
                  and turn ambiguity into systems that ship.
                </p>
 
-               {/* Strengths & Results Cards */}
-               <div className="grid md:grid-cols-2 gap-6 mt-8">
-                 <div className="bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20 rounded-lg p-6">
+               {/* Core Strengths Card */}
+               <div className="mt-8">
+                 <div className="bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20 rounded-lg p-6 max-w-md">
                    <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
                      <div className="w-2 h-2 bg-primary rounded-full"></div>
                      Core Strengths
@@ -53,6 +53,10 @@ const AboutSection = () => {
                      </li>
                      <li className="flex items-start gap-2">
                        <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                       AI & Personalization
+                     </li>
+                     <li className="flex items-start gap-2">
+                       <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                        Data-driven decision making
                      </li>
                      <li className="flex items-start gap-2">
@@ -61,31 +65,10 @@ const AboutSection = () => {
                      </li>
                    </ul>
                  </div>
-
-                 <div className="bg-gradient-to-br from-accent/5 to-primary/5 border border-accent/20 rounded-lg p-6">
-                   <h4 className="text-lg font-semibold text-accent mb-4 flex items-center gap-2">
-                     <div className="w-2 h-2 bg-accent rounded-full"></div>
-                     Key Results
-                   </h4>
-                   <ul className="space-y-2 text-foreground">
-                     <li className="flex items-start gap-2">
-                       <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                       Stronger user engagement across platforms
-                     </li>
-                     <li className="flex items-start gap-2">
-                       <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                       15% profit lift through analytics
-                     </li>
-                     <li className="flex items-start gap-2">
-                       <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                       Multi-million-user scale platforms
-                     </li>
-                   </ul>
-                 </div>
                </div>
 
               <div className="flex flex-wrap gap-3 pt-4">
-                {["Product Management", "AI & Personalization", "Data Analytics", "Strategy", "Agile", "Customer Experience"].map((skill) => (
+                {["Data Analytics", "Strategy", "Agile", "Customer empathy"].map((skill) => (
                   <span
                     key={skill}
                     className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium"
