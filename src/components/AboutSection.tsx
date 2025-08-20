@@ -119,7 +119,7 @@ const AboutSection = () => {
 
                     <div className="bg-accent/5 border-l-4 border-accent p-6 rounded-r-lg my-8">
                       <p className="text-lg leading-relaxed mb-4">
-                        I believe Generative AI and LLMs are powerful not just because they accelerate execution—but 
+                        I believe Generative AI, LLMs and AI Agents are powerful not just because they accelerate execution—but 
                         because they help us scale empathy. Used well, they allow us to personalize more precisely, 
                         test more thoughtfully, and meet users with nuance—not noise.
                       </p>
