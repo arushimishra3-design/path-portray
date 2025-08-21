@@ -1,10 +1,11 @@
 import { Badge } from "@/components/ui/badge";
+import { GraduationCap, Rocket, Target } from "lucide-react";
 
 const CertificationsSection = () => {
   const certifications = [
     {
       id: 1,
-      logo: "🎓",
+      icon: GraduationCap,
       title: "Stanford GenAI",
       issuer: "Stanford Online",
       color: "from-red-500 to-red-600",
@@ -12,7 +13,7 @@ const CertificationsSection = () => {
     },
     {
       id: 2,
-      logo: "🚀",
+      icon: Rocket,
       title: "SAFe APM",
       issuer: "Scaled Agile",
       color: "from-blue-500 to-blue-600",
@@ -20,7 +21,7 @@ const CertificationsSection = () => {
     },
     {
       id: 3,
-      logo: "🎯",
+      icon: Target,
       title: "OKR Coach",
       issuer: "WorkBoard",
       color: "from-purple-500 to-purple-600",
@@ -51,8 +52,8 @@ const CertificationsSection = () => {
                 className="group flex flex-col items-center transition-all duration-300 hover:scale-110"
               >
                 {/* Circular Badge */}
-                <div className={`w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br ${cert.color} rounded-full flex items-center justify-center text-white text-3xl md:text-4xl shadow-lg group-hover:shadow-2xl transition-all duration-300 mb-3`}>
-                  {cert.logo}
+                <div className={`w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br ${cert.color} rounded-full flex items-center justify-center text-white shadow-lg group-hover:shadow-2xl transition-all duration-300 mb-3`}>
+                  <cert.icon size={32} className="md:w-10 md:h-10" />
                 </div>
                 
                 {/* Title and Issuer */}
