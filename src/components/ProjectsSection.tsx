@@ -26,8 +26,8 @@ const ProjectsSection = () => {
       challenges: "Legacy data inconsistencies across systems, complex multi-user ownership scenarios, and coordinating policy/compliance across markets while keeping the UI simple.",
       image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
       technologies: ["Mobile UX flows", "Identity & authorization", "API design collaboration", "Analytics & experimentation", "Copy and information architecture", "Platform strategy", "Cross-functional leadership"],
-      duration: "One quarter + iterations",
-      role: "Product Manager",
+      duration: "1 year + iterations",
+      role: "Senior Product Manager",
       situation: "Core problem: Customers struggled to add or remove vehicles and to authorize additional drivers; drop-offs and support tickets were high, and errors created trust issues. Task and timeline: Deliver a simplified, compliant v1 in the next release cycle (~one quarter), then iterate across subsequent releases to harden edge cases and scale globally.",
       actions: "Journey mapping & diagnostics: Mapped end-to-end flows and analyzed drop-off points with usability sessions. Flow redesign: Consolidated entry points, reduced steps, clearer copy with inline validation. Authorization & safety: Standardized ownership/consent model with edge-case handling. Platform & operations: Feature-flagged rollouts with dashboards and support tools. Experimentation: A/B tested copy and flows with weekly metric reviews.",
       forwardVision: "Move from 'guided forms' to personalized setup: pre-filled context where possible, adaptive next best actions, and cross-device start/resume. Build a shared access model that stays simple for families and fleets while enforcing clear consent, revocation, and auditability."
