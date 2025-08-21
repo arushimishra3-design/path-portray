@@ -72,7 +72,6 @@ const AboutSection = () => {
                       className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary border border-primary/20 rounded-full text-sm font-medium hover-scale animate-fade-in"
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
                       {strength}
                     </span>
                   ))}
