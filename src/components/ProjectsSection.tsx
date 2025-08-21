@@ -19,7 +19,7 @@ const ProjectsSection = () => {
       role: "Lead Product Manager"
     },
     {
-      title: "Personalized Vehicle onboarding (App setup)",
+      title: "Personalized Vehicle Onboarding (App setup)",
       description: "Owned the end-to-end simplification of vehicle management in My Garage area for a Fortune 100 automaker. Reduced friction, improved verification clarity, and made multi-user access safe and straightforward.",
       detailedDescription: "Led the comprehensive redesign of vehicle onboarding and authorization flows for a Fortune 100 automaker's consumer mobile app. Owned end-to-end simplification of 'add vehicle,' 'remove vehicle,' and 'vehicle authorization' features in the My Garage area. The core challenge was high customer drop-offs and support tickets due to complex flows, unclear verification processes, and trust issues from errors. Delivered a simplified, compliant v1 in one quarter, then iterated across subsequent releases to harden edge cases and scale globally.",
       impact: "Higher completion: measurable lift in successful 'add vehicle' and 'authorization' completions. Faster setup: reduced time-to-link and fewer back-and-forth attempts. Lower support load: material drop in tickets related to add/remove and access. Cleaner data: fewer duplicate vehicles and error loops after idempotency changes.",
@@ -140,7 +140,7 @@ const ProjectsSection = () => {
                       </p>
                     </div>
 
-                    {project.title === "Personalized Vehicle onboarding (App setup)" && (
+                    {project.title === "Personalized Vehicle Onboarding (App setup)" && (
                       <>
                         <div>
                           <h4 className="text-lg font-semibold mb-3 text-primary">Situation</h4>
@@ -182,7 +182,7 @@ const ProjectsSection = () => {
                       </p>
                     </div>
 
-                    {project.title === "Personalized Vehicle onboarding (App setup)" && (
+                    {project.title === "Personalized Vehicle Onboarding (App setup)" && (
                       <div>
                         <h4 className="text-lg font-semibold mb-3 text-primary">Forward Vision</h4>
                         <p className="text-muted-foreground leading-relaxed text-justify">
