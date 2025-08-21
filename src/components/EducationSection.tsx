@@ -64,7 +64,7 @@ const EducationSection = () => {
             <span className="text-primary font-medium">Education</span>
           </div>
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Academic Foundation
+            Academics
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Building expertise through rigorous academic programs in technology and business
