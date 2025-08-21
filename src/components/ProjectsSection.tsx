@@ -46,7 +46,7 @@ const ProjectsSection = () => {
       detailedDescription: "Built and launched a comprehensive customer analytics platform for telecommunications industry clients, leveraging advanced machine learning algorithms to predict customer behavior and segment users effectively. The platform processed millions of data points daily to generate actionable insights, churn prediction models, and personalized marketing recommendations. Worked closely with data science teams to translate complex analytics into user-friendly dashboards and automated reporting systems.",
       impact: "Generated $2M+ additional revenue for clients, reduced customer churn by 18%, and improved marketing campaign ROI by 32%.",
       challenges: "Handling massive datasets, ensuring real-time analytics performance, and creating intuitive interfaces for non-technical users.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=800&q=80",
       technologies: ["Data Analytics", "Predictive Modeling", "Customer Segmentation", "Business Intelligence", "ROI Optimization"],
       duration: "12 months",
       role: "Product Analyst"
