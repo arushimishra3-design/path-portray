@@ -6,7 +6,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import CertificationsSection from "@/components/CertificationsSection";
-import ContactSection from "@/components/ContactSection";
+
 
 const Index = () => {
   return (
@@ -19,7 +19,7 @@ const Index = () => {
       <ExperienceSection />
       <SkillsSection />
       <EducationSection />
-      <ContactSection />
+
       {/* Footer */}
       <footer className="bg-muted/30 py-12">
         <div className="container mx-auto px-6 text-center">
@@ -43,6 +43,13 @@ const Index = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </a>
+            <div className="text-muted-foreground hover:text-primary transition-colors duration-200">
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span className="sr-only">Seattle, WA</span>
+            </div>
           </div>
           
           {/* Built with love text */}

@@ -13,7 +13,6 @@ const Navigation = () => {
     { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
     { id: "education", label: "Education" },
-    { id: "contact", label: "Contact" },
   ];
 
   useEffect(() => {
@@ -81,9 +80,9 @@ const Navigation = () => {
             variant="outline"
             size="sm"
             className="md:hidden"
-            onClick={() => scrollToSection("contact")}
+            onClick={() => scrollToSection("about")}
           >
-            Contact
+            About
           </Button>
         </div>
       </div>
