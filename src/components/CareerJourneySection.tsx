@@ -62,43 +62,44 @@ const CareerJourneySection = () => {
             </p>
           </div>
 
-          {/* Desktop Horizontal Timeline */}
+          {/* Simple Horizontal Timeline */}
           <div className="hidden lg:block">
             <div className="overflow-x-auto">
-              <div className="flex items-center justify-center min-w-max px-8 py-12">
-                {journeySteps.map((step, index) => (
-                  <div key={index} className="flex items-center">
-                    {/* Timeline step */}
-                    <div className="flex flex-col items-center text-center min-w-[200px] group">
-                      {/* Year badge */}
-                      <div className={`${step.color} text-white px-4 py-2 rounded-full font-bold text-lg mb-3 shadow-lg group-hover:scale-105 transition-transform duration-200`}>
-                        {step.year}
+              <div className="flex items-center justify-center py-12">
+                {/* Horizontal line */}
+                <div className="relative flex items-center">
+                  <div className="absolute inset-0 h-0.5 bg-gradient-to-r from-primary/30 via-primary to-primary/30 top-1/2 transform -translate-y-1/2"></div>
+                  
+                  {journeySteps.map((step, index) => (
+                    <div key={index} className="relative flex items-center">
+                      {/* Timeline dot */}
+                      <div className="relative group">
+                        <div className="w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg hover:scale-125 transition-transform duration-200 cursor-pointer"></div>
+                        
+                        {/* Hover tooltip */}
+                        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+                          <div className="bg-card border rounded-lg shadow-lg p-3 min-w-[200px]">
+                            <div className="text-xs font-semibold text-primary mb-1">{step.year}</div>
+                            <div className="text-sm font-bold text-foreground mb-1">{step.title}</div>
+                            <div className="text-xs text-muted-foreground">{step.company}</div>
+                          </div>
+                        </div>
+                        
+                        {/* Year label below */}
+                        <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-primary whitespace-nowrap">
+                          {step.year}
+                        </div>
                       </div>
-                      {/* Icon */}
-                      <div className="text-3xl mb-2">
-                        {step.icon}
-                      </div>
-                      {/* Content */}
-                      <h3 className="font-bold text-primary text-sm mb-1">
-                        {step.title}
-                      </h3>
-                      <p className="text-xs font-medium text-foreground mb-1">
-                        {step.company}
-                      </p>
-                      <p className="text-xs text-muted-foreground leading-relaxed max-w-[180px]">
-                        {step.description}
-                      </p>
+                      
+                      {/* Arrow between dots */}
+                      {index < journeySteps.length - 1 && (
+                        <div className="flex items-center mx-8">
+                          <div className="text-primary">→</div>
+                        </div>
+                      )}
                     </div>
-                    
-                    {/* Arrow connector (except for last item) */}
-                    {index < journeySteps.length - 1 && (
-                      <div className="flex items-center mx-6">
-                        <div className="h-0.5 w-12 bg-gradient-to-r from-primary to-accent"></div>
-                        <div className="text-2xl text-primary ml-2">→</div>
-                      </div>
-                    )}
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
