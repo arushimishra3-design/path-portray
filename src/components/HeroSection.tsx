@@ -28,7 +28,7 @@ const HeroSection = () => {
             Hey, I am Arushi.
           </h1>
           <p className="text-2xl md:text-3xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
-            Excited about problems, and even more hyped about solving them.
+            I read the bumps in the journey so users don't have to.
           </p>
           <p className="text-lg text-muted-foreground/80 mb-8">
             Carnegie Mellon • Stanford Alumni • (she/her)
