@@ -9,7 +9,9 @@ const CertificationsSection = () => {
       title: "Stanford GenAI",
       issuer: "Stanford Online",
       color: "from-red-500 to-red-600",
-      pdfPath: "/certificates/stanford-genai-certificate.pdf"
+      pdfPath: "/certificates/stanford-genai-certificate.pdf",
+      isImage: true,
+      imageSrc: "/lovable-uploads/27307c8f-ed00-48d8-90a9-f4361665ecc2.png"
     },
     {
       id: 2,
@@ -53,7 +55,15 @@ const CertificationsSection = () => {
               >
                 {/* Circular Badge */}
                 <div className={`w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br ${cert.color} rounded-full flex items-center justify-center text-white shadow-lg group-hover:shadow-2xl transition-all duration-300 mb-3`}>
-                  <cert.icon size={32} className="md:w-10 md:h-10" />
+                  {cert.isImage ? (
+                    <img 
+                      src={cert.imageSrc} 
+                      alt={cert.title}
+                      className="w-16 h-16 md:w-20 md:h-20 object-contain"
+                    />
+                  ) : (
+                    <cert.icon size={32} className="md:w-10 md:h-10" />
+                  )}
                 </div>
                 
                 {/* Title and Issuer */}
