@@ -4,9 +4,7 @@ const AboutSection = () => {
   
   const stats = [
     { number: "10+", label: "Years Experience" },
-    { number: "15+", label: "Product Launches" },
     { number: "14M+", label: "Users Impacted" },
-    { number: "+10pts", label: "Engagement Lift" },
   ];
 
   return (
