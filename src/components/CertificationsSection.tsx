@@ -42,7 +42,7 @@ const CertificationsSection = () => {
   ];
 
   return (
-    <section id="certifications" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="certifications" className="py-20 bg-gradient-card">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -61,7 +61,7 @@ const CertificationsSection = () => {
                   <div className="flex items-start gap-4">
                     {/* Logo */}
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white text-2xl">
+                      <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center text-white text-2xl">
                         {cert.logo}
                       </div>
                     </div>
@@ -101,7 +101,7 @@ const CertificationsSection = () => {
                             href={cert.pdfPath}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors hover:underline"
+                            className="text-primary hover:text-accent font-medium text-sm transition-colors hover:underline"
                           >
                             {cert.showCredential}
                           </a>
