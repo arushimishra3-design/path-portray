@@ -36,6 +36,12 @@ const HeroSection = () => {
             <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-hero bg-clip-text text-transparent">
               Hey, I am Arushi.
             </h1>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-6">
+              <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              </svg>
+              <span className="text-primary font-medium">Seattle, WA</span>
+            </div>
             <p className="text-2xl md:text-3xl text-muted-foreground mb-8 max-w-3xl mx-auto lg:mx-0 leading-relaxed font-medium">
               I read the bumps in the journey so users don't have to.
             </p>

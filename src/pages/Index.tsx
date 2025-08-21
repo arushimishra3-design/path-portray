@@ -24,7 +24,7 @@ const Index = () => {
       <footer className="bg-muted/30 py-12">
         <div className="container mx-auto px-6 text-center">
           {/* Social Icons */}
-          <div className="flex justify-center space-x-6 mb-6">
+          <div className="flex justify-center space-x-8 mb-6">
             <a 
               href="https://www.linkedin.com/in/arushi-mishra/" 
               target="_blank" 
@@ -43,28 +43,7 @@ const Index = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </a>
-            <div className="text-muted-foreground hover:text-primary transition-colors duration-200 relative group">
-              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                {/* Space Needle base */}
-                <path d="M8 20L16 20L16 18L8 18Z" />
-                {/* Space Needle tower */}
-                <path d="M11 18L13 18L13 8L11 8Z" />
-                {/* Space Needle top structure */}
-                <path d="M10 8L14 8L14 6L10 6Z" />
-                {/* Space Needle observation deck */}
-                <path d="M9 6L15 6L15 4L9 4Z" />
-                {/* Space Needle antenna */}
-                <path d="M11.5 4L12.5 4L12.5 2L11.5 2Z" />
-                {/* Space Needle sphere */}
-                <circle cx="12" cy="2" r="0.5" />
-              </svg>
-              {/* Tooltip */}
-              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-black/80 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
-                Seattle, WA
-                {/* Arrow pointing down */}
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-black/80"></div>
-              </div>
-            </div>
+
           </div>
           
           {/* Built with love text */}
