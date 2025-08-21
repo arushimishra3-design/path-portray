@@ -24,13 +24,13 @@ const AboutSection = () => {
           <div className="space-y-12">
             {/* Introduction */}
             <div className="text-center max-w-4xl mx-auto space-y-6">
-              <p className="text-xl leading-relaxed text-foreground">
+              <p className="text-xl leading-relaxed text-foreground text-justify">
                 I'm a Product Leader with 10+ years building AI-powered experiences. I've led intelligent, 
                 cross-channel messaging for a Fortune 100 consumer platform across mobile, web and in-vehicle. 
                 My experience spans platform strategy and front-end, customer-facing apps across both B2B and B2C.
               </p>
               
-              <p className="text-xl leading-relaxed text-foreground">
+              <p className="text-xl leading-relaxed text-foreground text-justify">
                 Throughout my career, I've built and shipped contextual personalization, learning-to-rank 
                 recommendations, and NLP document automation. I mentor PMs, shape roadmaps, 
                 and turn ambiguity into systems that ship.
