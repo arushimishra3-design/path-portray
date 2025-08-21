@@ -4,7 +4,7 @@ const AboutSection = () => {
   
   const stats = [
     { number: "10+", label: "Years Experience" },
-    { number: "14M+", label: "Users Impacted" },
+    { number: "14M+", label: "Customers Impacted" },
   ];
 
   return (
@@ -35,23 +35,8 @@ const AboutSection = () => {
 
           {/* Main Content */}
           <div className="space-y-12">
-            {/* Introduction */}
-            <div className="text-center max-w-4xl mx-auto space-y-6">
-              <p className="text-xl leading-relaxed text-foreground text-justify">
-                As a kid, I kept asking why things felt clunky, then sketched a simpler way. That habit became my product compass: start with one person, one moment, one job to be done.
-              </p>
-              
-              <p className="text-xl leading-relaxed text-foreground text-justify">
-                Today I build customer-centered products. I led intelligent, cross-channel messaging for a Fortune 100 organization across mobile, web, and embedded surfaces. I pair platform strategy with polished front ends in B2B and B2C. Onboarding that makes setup effortless. Recommendation systems that surface what really matters. Document intelligence that turns messy files into clean, usable data.
-              </p>
-              
-              <p className="text-xl leading-relaxed text-foreground text-justify">
-                I listen hard, test fast, measure honestly, and ship what helps. If it doesn't reduce friction or increase relevance, it waits. That's how teams move with clarity and how products earn trust—one useful moment at a time.
-              </p>
-            </div>
-
-            {/* Stats Grid */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {/* Stats Grid - Moved to top for better visual hierarchy */}
+            <div className="grid grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
               {stats.map((stat, index) => (
                 <Card 
                   key={index} 
@@ -67,6 +52,21 @@ const AboutSection = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+
+            {/* Introduction */}
+            <div className="text-center max-w-4xl mx-auto space-y-6">
+              <p className="text-xl leading-relaxed text-foreground text-justify">
+                As a kid, I kept asking why things felt clunky, then sketched a simpler way. That habit became my product compass: start with one person, one moment, one job to be done.
+              </p>
+              
+              <p className="text-xl leading-relaxed text-foreground text-justify">
+                Today I build customer-centered products. I led intelligent, cross-channel messaging for a Fortune 100 organization across mobile, web, and embedded surfaces. I pair platform strategy with polished front ends across B2B and B2C: effortless onboarding, recommendation systems that surface what matters, and document intelligence that turns noise into data.
+              </p>
+              
+              <p className="text-xl leading-relaxed text-foreground text-justify">
+                I listen hard, test fast, measure honestly, and ship what helps. If it doesn't reduce friction or increase relevance, it waits. That's how teams move with clarity and how products earn trust—one useful moment at a time.
+              </p>
             </div>
 
             {/* Core Strengths */}

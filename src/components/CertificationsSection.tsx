@@ -55,10 +55,11 @@ const CertificationsSection = () => {
                 href={cert.pdfPath}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col items-center transition-all duration-300 hover:scale-110"
+                className="group flex flex-col items-center transition-all duration-300 hover:scale-110 cursor-pointer"
+                aria-label={`Click to view ${cert.title} certificate from ${cert.issuer}`}
               >
-                {/* Square Badge */}
-                <div className={`w-24 h-24 md:w-32 md:h-32 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-300 mb-3 overflow-hidden ${cert.isImage ? (cert.id === 3 ? 'bg-transparent p-1' : 'bg-white p-3') : `bg-gradient-to-br ${cert.color} text-white`}`}>
+                {/* Square Badge with Click Indicator */}
+                <div className={`relative w-24 h-24 md:w-32 md:h-32 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-300 mb-3 overflow-hidden ${cert.isImage ? (cert.id === 3 ? 'bg-transparent p-1' : 'bg-white p-3') : `bg-gradient-to-br ${cert.color} text-white`}`}>
                   {cert.isImage ? (
                     <img 
                       src={cert.imageSrc} 
@@ -68,6 +69,17 @@ const CertificationsSection = () => {
                   ) : (
                     <cert.icon size={32} className="md:w-10 md:h-10" />
                   )}
+                  
+                  {/* Click Indicator Overlay - Positioned off-center */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-xl">
+                    <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                      <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-lg">
+                        <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 
                 {/* Title and Issuer */}
@@ -78,6 +90,8 @@ const CertificationsSection = () => {
                   <p className="text-xs md:text-sm text-muted-foreground">
                     {cert.issuer}
                   </p>
+                  
+
                 </div>
               </a>
             ))}
