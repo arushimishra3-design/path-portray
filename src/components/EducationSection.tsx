@@ -78,8 +78,8 @@ const EducationSection = () => {
                 key={index}
                 className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/20 h-fit"
               >
-              <div className="flex flex-col lg:flex-row lg:items-start gap-6">
-                <div className="flex-1">
+              <div className="flex flex-col gap-6">
+                <div>
                   <div className="flex items-start gap-3 mb-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                       <GraduationCap className="w-6 h-6 text-primary" />
@@ -149,7 +149,7 @@ const EducationSection = () => {
                       <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
                         expandedCoursework === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
                       }`}>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <div className="grid grid-cols-1 gap-2">
                           {edu.coursework.map((course, courseIndex) => (
                             <div
                               key={courseIndex}
