@@ -125,7 +125,7 @@ const CertificationsSection = () => {
           </div>
 
           {/* Additional Info */}
-          <div className="text-center mt-12">
+          <div className="text-center">
             <p className="text-muted-foreground text-sm">
               All certifications are verified and can be validated through their respective issuing organizations.
             </p>

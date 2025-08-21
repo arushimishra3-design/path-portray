@@ -3,7 +3,7 @@ const PhilosophySection = () => {
     <section id="philosophy" className="py-20 bg-gradient-card">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-12">
+          <div className="mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
               Product Philosophy
             </h2>
