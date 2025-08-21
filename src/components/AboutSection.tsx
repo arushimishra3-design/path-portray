@@ -71,18 +71,18 @@ const AboutSection = () => {
 
             {/* Core Strengths */}
             <div className="max-w-4xl mx-auto">
-              <div className="p-8 bg-gradient-to-r from-background via-accent/5 to-background border-l-4 border-primary rounded-r-xl">
-                <h3 className="text-2xl font-semibold text-primary mb-6 text-center">Core Strengths</h3>
-                <div className="flex flex-nowrap gap-2 justify-center overflow-x-auto pb-2">
+              <div className="p-4 md:p-8 bg-gradient-to-r from-background via-accent/5 to-background border-l-4 border-primary rounded-r-xl">
+                <h3 className="text-xl md:text-2xl font-semibold text-primary mb-4 md:mb-6 text-center">Core Strengths</h3>
+                <div className="flex flex-wrap gap-2 justify-center">
                   {[
-                    "Product Strategy & Execution",
+                    "Product Strategy",
                     "AI & Personalization", 
-                    "Data-Driven Decision Making",
+                    "Data-Driven Decisions",
                     "Customer Empathy"
                   ].map((strength, index) => (
                     <span 
                       key={strength}
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary border border-primary/20 rounded-full text-sm font-medium hover-scale animate-fade-in"
+                      className="inline-flex items-center gap-2 px-3 md:px-4 py-2 bg-primary/10 text-primary border border-primary/20 rounded-full text-xs md:text-sm font-medium hover-scale animate-fade-in whitespace-nowrap"
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
                       {strength}
