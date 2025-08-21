@@ -52,7 +52,7 @@ const ProjectsSection = () => {
       challenges: "Handling massive datasets, ensuring real-time analytics performance, and creating intuitive interfaces for non-technical users.",
       image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=800&q=80",
       technologies: ["Data Analytics", "Predictive Modeling", "Customer Segmentation", "Business Intelligence", "ROI Optimization"],
-      duration: "12 months",
+      duration: "36 months",
       role: "Product Analyst"
     }
   ];
