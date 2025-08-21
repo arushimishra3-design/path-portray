@@ -33,35 +33,12 @@ const HeroSection = () => {
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             Product Leader who turns data into delight.<br />
             <br />
-            10+ years building intelligent experiences across startups and 14M+ user platforms.
+            10+ years building intelligent experiences across startups and 14M+ user platforms.<br />
+            <br />
+            <span className="text-sm text-muted-foreground/80">
+              Carnegie Mellon • Stanford Alumni
+            </span>
           </p>
-          
-          <div className="flex items-center justify-center gap-6 mb-8">
-            <div className="relative">
-              <div className="flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-primary/20 via-primary/10 to-transparent rounded-l-full border-l-4 border-primary">
-                <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                  <span className="text-xs font-bold text-primary">CMU</span>
-                </div>
-                <span className="text-sm font-semibold text-primary">Carnegie Mellon</span>
-              </div>
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-            </div>
-            
-            <div className="text-2xl text-accent animate-pulse">⚡</div>
-            
-            <div className="relative">
-              <div className="flex items-center gap-3 px-6 py-3 bg-gradient-to-l from-accent/20 via-accent/10 to-transparent rounded-r-full border-r-4 border-accent">
-                <span className="text-sm font-semibold text-accent">Stanford</span>
-                <div className="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center">
-                  <span className="text-xs font-bold text-accent">STN</span>
-                </div>
-              </div>
-              <div className="absolute -top-1 -left-1 w-3 h-3 bg-accent rounded-full animate-pulse"></div>
-            </div>
-          </div>
-          <div className="text-center mb-8">
-            <span className="text-xs text-muted-foreground font-medium tracking-wider uppercase">Alumni</span>
-          </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
