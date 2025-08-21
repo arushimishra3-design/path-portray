@@ -168,15 +168,6 @@ const ProjectsSection = () => {
                       </div>
                     )}
 
-                    {project.title === "Messaging Platform Evolution" && (
-                      <div>
-                        <h4 className="text-lg font-semibold mb-3 text-primary">Situation</h4>
-                        <p className="text-muted-foreground leading-relaxed text-justify">
-                          <strong>Core problem:</strong> Over-messaging, low relevance, and eroding trust.<br/>
-                          <strong>Task & timeline:</strong> Ship an MVP in ~6 months, then scale through successive waves over the following year to harden the platform, add intelligence, and expand use cases across regions.
-                        </p>
-                      </div>
-                    )}
                     
                     <div>
                       <h4 className="text-lg font-semibold mb-3 text-primary">Key Impact</h4>
