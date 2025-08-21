@@ -32,6 +32,7 @@ const HeroSection = () => {
           </p>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             Product Leader who turns data into delight.<br />
+            <br />
             10+ years building intelligent experiences across startups and 14M+ user platforms.<br />
             Carnegie Mellon & Stanford Alum.
           </p>
