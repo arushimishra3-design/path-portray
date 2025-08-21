@@ -164,18 +164,18 @@ const ContactSection = () => {
                 return (
                   <Dialog key={index} open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                     <DialogTrigger asChild>
-                      <Card className="shadow-elegant border-0 bg-card/80 backdrop-blur-sm hover:shadow-glow transition-all duration-300 cursor-pointer group">
-                        <CardContent className="p-6 text-center">
+                      <Card className="shadow-elegant border-0 bg-card/80 backdrop-blur-sm hover:shadow-glow transition-all duration-300 cursor-pointer group h-full">
+                        <CardContent className="p-6 text-center h-full flex flex-col justify-center">
                           <div className="w-12 h-12 bg-primary/10 group-hover:bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors duration-200">
                             <IconComponent className="w-6 h-6 text-primary" />
                           </div>
                           <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-200 mb-1">
                             {info.title}
                           </h3>
-                          <p className="text-sm text-muted-foreground">
+                          <p className="text-sm text-muted-foreground mb-2">
                             {info.value}
                           </p>
-                          <p className="text-xs text-primary/70 mt-2">
+                          <p className="text-xs text-primary/70">
                             Click to send email
                           </p>
                         </CardContent>
@@ -267,10 +267,10 @@ const ContactSection = () => {
                   href={info.link}
                   target={info.title === "LinkedIn" ? "_blank" : undefined}
                   rel={info.title === "LinkedIn" ? "noopener noreferrer" : undefined}
-                  className="block"
+                  className="block h-full"
                 >
-                  <Card className="shadow-elegant border-0 bg-card/80 backdrop-blur-sm hover:shadow-glow transition-all duration-300 group">
-                    <CardContent className="p-6 text-center">
+                  <Card className="shadow-elegant border-0 bg-card/80 backdrop-blur-sm hover:shadow-glow transition-all duration-300 group h-full">
+                    <CardContent className="p-6 text-center h-full flex flex-col justify-center">
                       <div className="w-12 h-12 bg-primary/10 group-hover:bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors duration-200">
                         <IconComponent className="w-6 h-6 text-primary" />
                       </div>
@@ -285,22 +285,6 @@ const ContactSection = () => {
                 </a>
               );
             })}
-          </div>
-
-          <div className="mt-12 max-w-md mx-auto">
-            <Card className="shadow-elegant border-0 bg-gradient-to-br from-primary/5 to-primary/10">
-              <CardContent className="p-6">
-                <div className="text-center space-y-3">
-                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto">
-                    <Mail className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="font-semibold text-primary">Quick Response</h3>
-                  <p className="text-sm text-muted-foreground">
-                    I typically respond within 24 hours during business days.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
