@@ -162,9 +162,17 @@ const ProjectsSection = () => {
                     {project.title === "Enterprise Closing Platform (ServiceLink)" && (
                       <div>
                         <h4 className="text-lg font-semibold mb-3 text-primary">My Contribution</h4>
-                        <p className="text-muted-foreground leading-relaxed text-justify whitespace-pre-line">
-                          {project.contribution}
-                        </p>
+                        <div className="space-y-3">
+                          <div>
+                            <strong>Order Management:</strong> End-to-end workflow for closing orders with clear statuses, SLAs, and handoffs.
+                          </div>
+                          <div>
+                            <strong>Scheduling:</strong> Real-time availability, reminders, and reschedule flows to reduce no-shows and friction.
+                          </div>
+                          <div>
+                            <strong>NLP/ML Automation:</strong> Built an NLP/ML pipeline to parse loan packages and extract vesting, legal description, borrower/co-borrower names, addresses, and marital status with confidence thresholds, human-in-the-loop verification, audit logs, and an active-learning retraining loop.
+                          </div>
+                        </div>
                       </div>
                     )}
 
