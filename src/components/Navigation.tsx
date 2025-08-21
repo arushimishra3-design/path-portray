@@ -40,7 +40,14 @@ const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const navHeight = 80; // Account for fixed navigation
+      const elementPosition = element.offsetTop - navHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth"
+      });
+    } else {
+      console.warn(`Element with id "${sectionId}" not found`);
     }
   };
 
