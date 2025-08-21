@@ -24,20 +24,14 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-2 bg-gradient-hero bg-clip-text text-transparent">
-            Arushi Mishra
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-hero bg-clip-text text-transparent">
+            Hey, I am Arushi.
           </h1>
-          <p className="text-lg text-muted-foreground mb-6 font-medium">
-            (she/her)
+          <p className="text-2xl md:text-3xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
+            Excited about problems, and even more hyped about solving them.
           </p>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Product Leader who turns data into delight.<br />
-            <br />
-            10+ years building intelligent experiences across startups and 14M+ user platforms.<br />
-            <br />
-            <span className="text-sm text-muted-foreground/80">
-              Carnegie Mellon • Stanford Alumni
-            </span>
+          <p className="text-lg text-muted-foreground/80 mb-8">
+            Carnegie Mellon • Stanford Alumni • (she/her)
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
