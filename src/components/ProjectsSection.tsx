@@ -150,7 +150,7 @@ const ProjectsSection = () => {
                         </div>
                         
                         <div>
-                          <h4 className="text-lg font-semibold mb-3 text-primary">What I Did (Actions)</h4>
+                          <h4 className="text-lg font-semibold mb-3 text-primary">My Contribution</h4>
                           <p className="text-muted-foreground leading-relaxed text-justify">
                             {project.actions}
                           </p>
