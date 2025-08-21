@@ -15,6 +15,9 @@ const AboutSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
               About Me  
             </h2>
+            <p className="text-lg text-primary/80 font-medium tracking-wide mb-8">
+              curious.thoughtful.relentless
+            </p>
           </div>
 
           {/* Main Content */}
