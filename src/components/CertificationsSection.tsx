@@ -58,7 +58,7 @@ const CertificationsSection = () => {
                 className="group flex flex-col items-center transition-all duration-300 hover:scale-110"
               >
                 {/* Square Badge */}
-                <div className={`w-24 h-24 md:w-32 md:h-32 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-300 mb-3 overflow-hidden ${cert.isImage ? 'bg-white p-3' : `bg-gradient-to-br ${cert.color} text-white`}`}>
+                <div className={`w-24 h-24 md:w-32 md:h-32 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-300 mb-3 overflow-hidden ${cert.isImage ? (cert.id === 3 ? 'bg-transparent p-1' : 'bg-white p-3') : `bg-gradient-to-br ${cert.color} text-white`}`}>
                   {cert.isImage ? (
                     <img 
                       src={cert.imageSrc} 
