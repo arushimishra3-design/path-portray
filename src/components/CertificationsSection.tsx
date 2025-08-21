@@ -57,8 +57,8 @@ const CertificationsSection = () => {
                 rel="noopener noreferrer"
                 className="group flex flex-col items-center transition-all duration-300 hover:scale-110"
               >
-                {/* Circular Badge */}
-                <div className={`w-24 h-24 md:w-32 md:h-32 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-300 mb-3 overflow-hidden ${cert.isImage ? 'bg-white p-3' : `bg-gradient-to-br ${cert.color} text-white`}`}>
+                {/* Square Badge */}
+                <div className={`w-24 h-24 md:w-32 md:h-32 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-300 mb-3 overflow-hidden ${cert.isImage ? 'bg-white p-3' : `bg-gradient-to-br ${cert.color} text-white`}`}>
                   {cert.isImage ? (
                     <img 
                       src={cert.imageSrc} 
