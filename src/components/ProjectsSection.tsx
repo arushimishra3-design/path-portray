@@ -9,9 +9,68 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "Messaging Platform Evolution",
-      description: "Owned the evolution of a legacy messaging stack into an intelligent, real-time platform across consumer mobile app and in-vehicle surfaces at 14M+ scale. Introduced AI-powered recommendation system, modernized pipelines, and enabled self-serve tools.",
-      detailedDescription: "Led the transformation of a Fortune 100 automaker's legacy messaging infrastructure into an intelligent, real-time platform serving 14M+ customers across mobile and in-vehicle surfaces. Core challenge: Over-messaging, low relevance, and eroding trust. Shipped MVP in 6 months, then scaled through successive waves to harden the platform, add intelligence, and expand use cases across regions. Built foundations with eligibility rules and cross-channel suppression, real-time events and triggers. Implemented intelligence layer with AI-powered recommendation system featuring scoring for predicted positive interaction and learning-to-rank algorithms to order messages by urgency, value, and fatigue. Established trust & measurement framework with NPIR (net positive interaction rate) as north star, plus consent/opt-out automation with auditability across regions. Created self-serve content system with templates, workflow, versioning, and rollbacks, plus analytics to prune low performers.",
-      impact: "• Engagement: opens improved from ~14% to ~18% (+4 pts)\n• Fatigue: opt-outs decreased ~12%, high-priority mix reached ~55%\n• Renewals: targeted flows increased ~10%\n• Velocity: time-to-publish ~35% faster, revisions ~50% fewer\n• Reliability: 0 P1 incidents post-launch",
+      description: "Led transformation of Fortune 100 automaker's legacy messaging into intelligent, real-time platform serving 14M+ customers across mobile, web, and embedded surfaces.",
+      detailedDescription: `Role: Lead PM → Program Lead
+Length: 18 months • Surfaces: mobile, web, embedded • Scale: 14M+ customers
+
+The problem
+We weren't failing because we didn't message enough. We were failing because we messaged too much—and not helpfully. Messages weren't personalized or timed to the journey; they landed as generic blasts, not help. Customers called them spammy. A batch, front-end-heavy stack couldn't decide in real time what to say, when to say it, or whether to say anything at all.
+
+Why personalization matters: it answers "why this, why now, why here" for each person. Without that, trust erodes, opt-outs rise, and our customer-level trust metric falls.
+
+The goal
+Replace volume with value. Build a system that decides whether to speak, what to say, when to say it, and where it should appear. Give teams a safe, fast way to publish and learn. Measure trust at the customer level with NPIR.
+
+NPIR (Net Positive Interaction Rate)
+Definition: (customers with ≥1 positive interaction − customers with ≥1 negative interaction) ÷ customers targeted in the period.
+Positive signals: open → action, task completion, "helpful" feedback.
+Negative signals: mute, opt-out, spam mark, quick bounce. Count at most one positive and one negative per customer per period; dedupe across channels.
+
+What I led
+Reset the defaults
+• Eligibility rules (should we speak at all) and cross-channel suppression (stop duplicates and off-context pings).
+• Moved decisioning server-side with real-time triggers so timing and channel could be smart.
+
+Add intelligence
+• Scoring model to estimate the likelihood of a positive interaction.
+• Learning-to-rank recommendation system to order eligible messages by urgency, value, and fatigue.
+
+Make trust visible
+• Adopted NPIR as the north star across product, marketing, legal, and engineering.
+• Added launch gates and kill switches tied to NPIR and experiment results.
+
+Speed up teams
+• Self-serve content system with templates, approvals, versioning, rollbacks, and analytics.
+• Dashboards to prune low performers and increase experiment cadence.
+
+Build in compliance
+• Consent and opt-out automation with audit trails so the compliant path was also the fastest path.
+
+System at a glance
+Signals & identity: app, device, lifecycle, and event streams captured in real time with a shared taxonomy.
+Eligibility & policy: "should we speak at all" plus suppression across channels to prevent overload.
+Scoring: predicts the chance a message will help this customer now.
+Ranking (recommender): sorts eligible messages by urgency, value, and fatigue to pick the best few.
+Orchestration: chooses timing, channel fit, and frequency caps so useful messages don't crowd each other.
+Authoring & delivery: templates and approvals flow to mobile, web, and embedded with safe rollout and rollback.
+Analytics & governance: NPIR dashboards, A/B results, consent logs, and playbooks for rollback and template retirement.
+
+Impact
+NPIR: moved from undefined to the north star; stayed positive week over week after guardrails + ranker rollout.
+Engagement: opens +4 pts (~14% → ~18%).
+Fatigue: opt-outs −12%; high-priority mix to ~55%.
+Subscription health: targeted renewals +~10%.
+Velocity: time to publish −35%; revisions −50%.
+Scale: 14M+ customers across mobile, web, and embedded.
+
+What I learned
+Put guardrails in first; reducing noise makes intelligence work.
+A shared, customer-level metric changes behavior. NPIR aligned incentives across teams.
+Self-serve plus clear gates turns improvement into a weekly habit, not a yearly event.
+
+Forward view
+Adaptive ranker that learns per customer, smarter timing and channel selection with dynamic frequency by cohort, LLM-assisted authoring with policy checks, and measured expansion to new surfaces—guided by NPIR and clear launch gates.`,
+      impact: "NPIR: moved from undefined to north star; stayed positive week over week after guardrails + ranker rollout. Engagement: opens +4 pts (~14% → ~18%). Fatigue: opt-outs −12%; high-priority mix to ~55%. Subscription health: targeted renewals +~10%. Velocity: time to publish −35%; revisions −50%. Scale: 14M+ customers across mobile, web, and embedded.",
       challenges: "Unifying fragmented data into real-time signals at scale; balancing personalization with regional privacy requirements; aligning 10+ stakeholder teams on shared prioritization model and KPI stack.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
       technologies: ["AI/ML Decisioning", "Recommendation Systems", "Personalization", "Real-time Messaging", "Mobile & In-Vehicle Platforms", "Experimentation & Analytics", "Privacy/Consent Automation", "Platform Strategy"],

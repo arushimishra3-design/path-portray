@@ -76,6 +76,7 @@ const AboutSection = () => {
                 <div className="flex flex-wrap gap-2 justify-center">
                   {[
                     "Product Strategy",
+                    "Product Execution",
                     "AI & Personalization", 
                     "Data-Driven Decisions",
                     "Customer Empathy"
