@@ -38,12 +38,12 @@ const HeroSection = () => {
             <div className="flex items-center justify-center gap-4 mt-4">
               <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full border border-primary/20">
                 <GraduationCap className="w-5 h-5 text-primary" />
-                <span className="text-sm font-semibold bg-gradient-hero bg-clip-text text-transparent">Carnegie Mellon</span>
+                <span className="text-sm font-semibold bg-gradient-hero bg-clip-text text-transparent">Carnegie Mellon Alum</span>
               </div>
               <Sparkles className="w-4 h-4 text-accent animate-pulse" />
               <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-accent/10 to-primary/10 rounded-full border border-accent/20">
                 <GraduationCap className="w-5 h-5 text-accent" />
-                <span className="text-sm font-semibold bg-gradient-accent bg-clip-text text-transparent">Stanford</span>
+                <span className="text-sm font-semibold bg-gradient-accent bg-clip-text text-transparent">Stanford Alum</span>
               </div>
             </div>
           </p>
