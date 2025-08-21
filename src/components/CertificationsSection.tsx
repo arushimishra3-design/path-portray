@@ -19,7 +19,9 @@ const CertificationsSection = () => {
       title: "SAFe APM",
       issuer: "Scaled Agile",
       color: "from-blue-500 to-blue-600",
-      pdfPath: "/certificates/safe-agile-certification.pdf"
+      pdfPath: "/certificates/safe-agile-certification.pdf",
+      isImage: true,
+      imageSrc: "/lovable-uploads/67a5ccce-cd05-4e68-9207-4dde00fb1dae.png"
     },
     {
       id: 3,
