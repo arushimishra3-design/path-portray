@@ -25,7 +25,7 @@ const ProjectsSection = () => {
       impact: "Higher completion: measurable lift in successful 'add vehicle' and 'authorization' completions. Faster setup: reduced time-to-link and fewer back-and-forth attempts. Lower support load: material drop in tickets related to add/remove and access. Cleaner data: fewer duplicate vehicles and error loops after idempotency changes. Numbers: Completion +10–15 pts, time-to-link −25–35%, support tickets −30–40%, duplicate records −50%+.",
       challenges: "Legacy data inconsistencies across systems, complex multi-user ownership scenarios, and coordinating policy/compliance across markets while keeping the UI simple.",
       image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
-      technologies: ["Mobile UX flows", "Identity & authorization", "API design collaboration", "Analytics & experimentation", "Copy and information architecture", "Platform strategy", "Cross-functional leadership"],
+              technologies: ["Mobile UX flows", "Identity & authorization", "API design collaboration", "Analytics & experimentation", "Platform strategy", "Cross-functional leadership"],
       duration: "1 year + iterations",
       role: "Senior Product Manager",
       situation: "Core problem: Customers struggled to add or remove vehicles and to authorize additional drivers; drop-offs and support tickets were high, and errors created trust issues.",
