@@ -18,15 +18,15 @@ const AboutSection = () => {
             <div className="mb-8">
               <div className="flex flex-wrap justify-center items-center gap-1 text-2xl md:text-3xl font-light">
                 <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent animate-fade-in hover-scale cursor-default" style={{ animationDelay: '0.1s' }}>
-                  curious
+                  Curious
                 </span>
                 <span className="text-primary/60 animate-fade-in" style={{ animationDelay: '0.2s' }}>.</span>
                 <span className="bg-gradient-to-r from-primary/80 to-accent bg-clip-text text-transparent animate-fade-in hover-scale cursor-default" style={{ animationDelay: '0.3s' }}>
-                  thoughtful
+                  Thoughtful
                 </span>
                 <span className="text-primary/60 animate-fade-in" style={{ animationDelay: '0.4s' }}>.</span>
                 <span className="bg-gradient-to-r from-accent to-primary/90 bg-clip-text text-transparent animate-fade-in hover-scale cursor-default" style={{ animationDelay: '0.5s' }}>
-                  relentless
+                  Relentless
                 </span>
               </div>
               <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mt-4 animate-fade-in" style={{ animationDelay: '0.6s' }}></div>
