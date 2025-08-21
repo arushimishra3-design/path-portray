@@ -15,21 +15,14 @@ const AboutSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
               About Me  
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Passionate about creating digital solutions that make a real difference
-            </p>
           </div>
 
           {/* Main Content */}
           <div className="space-y-12">
             {/* Introduction */}
             <div className="text-center max-w-4xl mx-auto space-y-6">
-              <p className="text-2xl font-semibold text-primary mb-6">
-                Curious. Thoughtful. Relentless.
-              </p>
-              
               <p className="text-xl leading-relaxed text-foreground text-justify">
-                As a kid, I kept asking why things felt clunky, then sketched a simpler way. That habit became my product compass: start with one person, one moment, one job to be done.
+                <span className="text-primary font-semibold">Curious. Thoughtful. Relentless.</span> As a kid, I kept asking why things felt clunky, then sketched a simpler way. That habit became my product compass: start with one person, one moment, one job to be done.
               </p>
               
               <p className="text-xl leading-relaxed text-foreground text-justify">
