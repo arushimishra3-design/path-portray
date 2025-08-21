@@ -54,12 +54,12 @@ const CertificationsSection = () => {
                 className="group flex flex-col items-center transition-all duration-300 hover:scale-110"
               >
                 {/* Circular Badge */}
-                <div className={`w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br ${cert.color} rounded-full flex items-center justify-center text-white shadow-lg group-hover:shadow-2xl transition-all duration-300 mb-3`}>
+                <div className={`w-24 h-24 md:w-32 md:h-32 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-300 mb-3 ${cert.isImage ? 'p-2' : `bg-gradient-to-br ${cert.color} text-white`}`}>
                   {cert.isImage ? (
                     <img 
                       src={cert.imageSrc} 
                       alt={cert.title}
-                      className="w-16 h-16 md:w-20 md:h-20 object-contain"
+                      className="w-full h-full object-contain rounded-full"
                     />
                   ) : (
                     <cert.icon size={32} className="md:w-10 md:h-10" />
