@@ -217,7 +217,7 @@ const ProjectsSection = () => {
             ))}
           </div>
           
-          <div className="text-center mt-12">
+          <div className="text-center">
             <p className="text-muted-foreground">
               More projects available upon request. Some details are limited due to confidentiality agreements.
             </p>
