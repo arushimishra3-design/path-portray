@@ -7,6 +7,7 @@ import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import PhilosophySection from "@/components/PhilosophySection";
+import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <ProjectsSection />
       <EducationSection />
       <PhilosophySection />
+      <ContactSection />
       {/* Footer */}
       <footer className="bg-muted/30 py-12">
         <div className="container mx-auto px-6 text-center">
