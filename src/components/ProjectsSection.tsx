@@ -24,7 +24,7 @@ const ProjectsSection = () => {
       detailedDescription: "Redesigned and launched Ford's comprehensive digital account experience serving over 8 million active users. The project involved creating a unified customer journey from initial onboarding through advanced vehicle management features. I led cross-functional teams to implement personalized dashboards, streamlined account setup processes, and intelligent vehicle connectivity features. The platform integrated with Ford's entire ecosystem including dealerships, service centers, and mobile applications.",
       impact: "Reduced onboarding time by 50%, increased feature adoption by 35%, and achieved 4.8/5 customer satisfaction rating.",
       challenges: "Legacy system integration, coordinating across 15+ teams, and maintaining consistent experience across web and mobile platforms.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=800&q=80",
       technologies: ["Product Strategy", "API Integration", "Customer Experience", "Cross-platform", "Agile"],
       duration: "24 months",
       role: "Senior Product Manager"
