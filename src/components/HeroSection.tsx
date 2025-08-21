@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-workspace.jpg";
+import lighterBackgroundPhoto from "@/assets/arushi-lighter-background.jpg";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -67,7 +68,7 @@ const HeroSection = () => {
           <div className="flex-shrink-0 lg:order-last">
             <div className="relative animate-fade-in">
               <img 
-                src="/lovable-uploads/1af86031-8c62-4cf7-9199-22f27fd55f72.png" 
+                src={lighterBackgroundPhoto} 
                 alt="Arushi Mishra - Product Leader" 
                 className="w-64 h-64 lg:w-80 lg:h-80 rounded-full object-cover shadow-elegant border-4 border-primary/10 hover:shadow-glow transition-all duration-300"
               />
