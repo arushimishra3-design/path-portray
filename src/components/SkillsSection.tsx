@@ -28,7 +28,7 @@ const SkillsSection = () => {
     },
     {
       category: "Data & Analytics",
-      tools: ["SQL", "Python", "Amplitude"]
+      tools: ["SQL", "Python", "R", "Amplitude", "Vibe Coding", "Replit", "Lovable", "Cursor"]
     },
     {
       category: "Experimentation",
