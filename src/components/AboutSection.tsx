@@ -62,10 +62,10 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-semibold text-primary mb-6 text-center">Core Strengths</h3>
                 <div className="flex flex-nowrap gap-2 justify-center overflow-x-auto pb-2">
                   {[
-                    "Product strategy & execution",
+                    "Product Strategy & Execution",
                     "AI & Personalization", 
-                    "Data-driven decision making",
-                    "Customer empathy"
+                    "Data-Driven Decision Making",
+                    "Customer Empathy"
                   ].map((strength, index) => (
                     <span 
                       key={strength}
