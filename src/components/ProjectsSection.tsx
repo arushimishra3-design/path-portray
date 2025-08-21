@@ -33,7 +33,7 @@ const ProjectsSection = () => {
       forwardVision: "Move from 'guided forms' to personalized setup: pre-filled context where possible, adaptive next best actions, and cross-device start/resume. Build a shared access model that stays simple for families and fleets while enforcing clear consent, revocation, and auditability."
     },
     {
-      title: "Enterprise Closing Platform (ServiceLink)",
+      title: "Enterprise Closing Platform",
       description: "Shipped a unified platform for real-estate closings across three pillars: a new Order Management system, a Scheduling app for customers and agents, and NLP/ML document automation to extract key fields from loan packages.",
       detailedDescription: "Shipped a unified platform for real-estate closings across three pillars: a new Order Management system, a Scheduling app for customers and agents, and NLP/ML document automation to extract key fields from loan packages.",
       contribution: "Order Management: End-to-end workflow for closing orders with clear statuses, SLAs, and handoffs.\n\nScheduling: Real-time availability, reminders, and reschedule flows to reduce no-shows and friction.\n\nNLP/ML Automation: Built an NLP/ML pipeline to parse loan packages and extract vesting, legal description, borrower/co-borrower names, addresses, and marital status with confidence thresholds, human-in-the-loop verification, audit logs, and an active-learning retraining loop.",
@@ -159,7 +159,7 @@ const ProjectsSection = () => {
                       </>
                     )}
 
-                    {project.title === "Enterprise Closing Platform (ServiceLink)" && (
+                    {project.title === "Enterprise Closing Platform" && (
                       <div>
                         <h4 className="text-lg font-semibold mb-3 text-primary">My Contribution</h4>
                         <p className="text-muted-foreground leading-relaxed text-justify whitespace-pre-line">
