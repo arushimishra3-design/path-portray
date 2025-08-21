@@ -3,14 +3,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Product Leader - Messaging and Personalization",
-      company: "Ford Motor Company",
-      period: "Mar 2023 - Present",
-      description: "Leading the vision and roadmap for intelligent, customer-first messaging across FordPass mobile and IVI platforms, enabling scalable, real-time engagement across multiple channels.",
+      title: "Lead Product Manager - Messaging Platform Evolution",
+      company: "Ford Motor Company (Fortune 100 Automaker)",
+      period: "Mar 2023 - Present (18+ months)",
+      description: "Owned the evolution of a legacy messaging stack into an intelligent, real-time platform across consumer mobile app and in-vehicle surfaces at 14M+ scale. Introduced AI-powered recommendation system, modernized pipelines, and enabled self-serve tools for teams to ship fewer, more helpful messages with clear impact metrics.",
       achievements: [
-        "Built Ford's next-gen AI-powered messaging infrastructure for personalization and targeting",
-        "Delivered measurable business impact through increased CTR and conversion rates",
-        "Championed customer trust through timely, relevant, and actionable messaging"
+        "Engagement: Increased message opens from ~14% to ~18% (+4 percentage points)",
+        "Fatigue Reduction: Decreased opt-outs by ~12%; increased high-priority message mix to ~55%",
+        "Business Impact: Boosted targeted renewal flows by ~10%",
+        "Operational Efficiency: 35% faster time-to-publish, 50% fewer revisions needed",
+        "Reliability: Achieved 0 P1 incidents post-launch across the entire platform",
+        "Built AI-powered recommendation system with learning-to-rank algorithms for message prioritization",
+        "Implemented real-time events, cross-channel suppression, and NPIR-based trust measurement",
+        "Created self-serve content system with templates, workflow automation, and analytics-driven optimization"
       ]
     },
     {
