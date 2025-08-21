@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card";
-import enhancedHeadshot from "@/assets/arushi-enhanced.jpg";
 
 const AboutSection = () => {
   
@@ -28,7 +27,7 @@ const AboutSection = () => {
                 <div className="flex-shrink-0">
                   <div className="relative">
                     <img 
-                      src={enhancedHeadshot} 
+                      src="/lovable-uploads/1af86031-8c62-4cf7-9199-22f27fd55f72.png" 
                       alt="Arushi Mishra - Product Leader" 
                       className="w-48 h-48 lg:w-56 lg:h-56 rounded-full object-cover shadow-elegant border-4 border-primary/10 hover:shadow-glow transition-all duration-300"
                     />
