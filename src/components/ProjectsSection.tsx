@@ -32,7 +32,7 @@ const ProjectsSection = () => {
     {
       title: "Enterprise B2B/B2C Platform",
       description: "Drove successful product launches for ServiceLink's enterprise platform, leading A/B tests and implementing KPI frameworks that improved conversion rates across multiple user segments.",
-      detailedDescription: "Led the product strategy and execution for ServiceLink's flagship B2B/B2C platform serving enterprise clients in the real estate and financial services sectors. Implemented comprehensive A/B testing framework, developed data-driven KPI measurement systems, and orchestrated product launches across multiple market segments. The platform handled complex workflows for loan processing, title services, and regulatory compliance while maintaining high performance and user satisfaction.",
+      detailedDescription: "Led the product strategy and execution for a mortgage service provider's flagship B2B/B2C platform serving enterprise clients in the real estate and financial services sectors. Implemented comprehensive A/B testing framework, developed data-driven KPI measurement systems, and orchestrated product launches across multiple market segments. The platform handled complex workflows for loan processing, title services, and regulatory compliance while maintaining high performance and user satisfaction.",
       impact: "Improved conversion rates by 28%, reduced processing time by 45%, and increased client retention by 22%.",
       challenges: "Complex regulatory requirements, diverse user needs across B2B and B2C segments, and integration with legacy enterprise systems.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
