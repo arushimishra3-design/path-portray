@@ -55,7 +55,12 @@ const HeroSection = () => {
               <Button 
                 variant="outline"
                 size="lg"
-                onClick={() => scrollToSection("contact")}
+                onClick={() => {
+                  const footer = document.querySelector('footer');
+                  if (footer) {
+                    footer.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
                 className="hover:bg-accent hover:text-accent-foreground transition-all duration-300"
               >
                 Get In Touch

@@ -24,7 +24,7 @@ const Index = () => {
       <footer className="bg-muted/30 py-12">
         <div className="container mx-auto px-6 text-center">
           {/* Social Icons */}
-          <div className="flex justify-center space-x-8 mb-6">
+          <div className="flex justify-center space-x-6 mb-6">
             <a 
               href="https://www.linkedin.com/in/arushi-mishra/" 
               target="_blank" 
