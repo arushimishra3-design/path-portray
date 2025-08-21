@@ -8,12 +8,12 @@ import { useState } from "react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Fortune 100 Automaker Messaging Platform Evolution",
+      title: "Messaging Platform Evolution",
       description: "Owned the evolution of a legacy messaging stack into an intelligent, real-time platform across consumer mobile app and in-vehicle surfaces at 14M+ scale. Introduced AI-powered recommendation system, modernized pipelines, and enabled self-serve tools.",
       detailedDescription: "Led the transformation of a Fortune 100 automaker's legacy messaging infrastructure into an intelligent, real-time platform serving 14M+ customers across mobile and in-vehicle surfaces. Core challenge: Over-messaging, low relevance, and eroding trust. Shipped MVP in 6 months, then scaled through successive waves to harden the platform, add intelligence, and expand use cases across regions. Built foundations with eligibility rules and cross-channel suppression, real-time events and triggers. Implemented intelligence layer with AI-powered recommendation system featuring scoring for predicted positive interaction and learning-to-rank algorithms to order messages by urgency, value, and fatigue. Established trust & measurement framework with NPIR as north star, plus consent/opt-out automation with auditability across regions. Created self-serve content system with templates, workflow, versioning, and rollbacks, plus analytics to prune low performers.",
       impact: "Engagement: opens improved from ~14% to ~18% (+4 pts). Fatigue: opt-outs decreased ~12%, high-priority mix reached ~55%. Renewals: targeted flows increased ~10%. Velocity: time-to-publish ~35% faster, revisions ~50% fewer. Reliability: 0 P1 incidents post-launch.",
       challenges: "Unifying fragmented data into real-time signals at scale; balancing personalization with regional privacy requirements; aligning 10+ stakeholder teams on shared prioritization model and KPI stack.",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=80",
       technologies: ["AI/ML Decisioning", "Recommendation Systems", "Personalization", "Real-time Messaging", "Mobile & In-Vehicle Platforms", "Experimentation & Analytics", "Privacy/Consent Automation", "Platform Strategy"],
       duration: "18 months",
       role: "Lead Product Manager"
@@ -137,7 +137,7 @@ const ProjectsSection = () => {
                       </p>
                     </div>
 
-                    {project.title === "Fortune 100 Automaker Messaging Platform Evolution" && (
+                    {project.title === "Messaging Platform Evolution" && (
                       <div>
                         <h4 className="text-lg font-semibold mb-3 text-primary">Situation</h4>
                         <p className="text-muted-foreground leading-relaxed text-justify">
@@ -161,7 +161,7 @@ const ProjectsSection = () => {
                       </p>
                     </div>
 
-                    {project.title === "Fortune 100 Automaker Messaging Platform Evolution" && (
+                    {project.title === "Messaging Platform Evolution" && (
                       <div>
                         <h4 className="text-lg font-semibold mb-3 text-primary">Forward Vision</h4>
                         <p className="text-muted-foreground leading-relaxed text-justify">
