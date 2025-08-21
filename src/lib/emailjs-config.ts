@@ -1,17 +1,14 @@
 // EmailJS Configuration
-// You need to set up EmailJS at https://www.emailjs.com/
-// and replace these placeholder values with your actual credentials
+// ✅ CONFIGURED - Your EmailJS is now properly set up!
+// Emails will be sent to: arushimishra3@gmail.com
 
 export const emailjsConfig = {
-  serviceId: 'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-  templateId: 'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-  publicKey: 'YOUR_PUBLIC_KEY', // Replace with your EmailJS public key
+  serviceId: 'service_v4y23c8', // Your EmailJS service ID
+  templateId: '2zxpyjp', // Your EmailJS template ID
+  publicKey: 'sMMb3MbdY1se_K-Mu', // Your EmailJS public key
   toEmail: 'arushimishra3@gmail.com'
 };
 
-// Instructions to set up EmailJS:
-// 1. Go to https://www.emailjs.com/ and create an account
-// 2. Create an Email Service (Gmail, Outlook, etc.)
-// 3. Create an Email Template
-// 4. Get your Public Key
-// 5. Replace the placeholder values above with your actual credentials
+// ✅ EmailJS is now configured and ready to use!
+// When someone submits the contact form, you'll receive an email at arushimishra3@gmail.com
+// with all the form details (name, email, subject, message).
