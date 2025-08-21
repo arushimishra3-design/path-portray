@@ -21,7 +21,7 @@ const CertificationsSection = () => {
       color: "from-blue-500 to-blue-600",
       pdfPath: "/certificates/safe-agile-certification.pdf",
       isImage: true,
-      imageSrc: "/lovable-uploads/67a5ccce-cd05-4e68-9207-4dde00fb1dae.png"
+      imageSrc: "/lovable-uploads/744453ba-f003-40f1-8733-7a27fffce30a.png"
     },
     {
       id: 3,
