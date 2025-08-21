@@ -24,16 +24,20 @@ const AboutSection = () => {
           <div className="space-y-12">
             {/* Introduction */}
             <div className="text-center max-w-4xl mx-auto space-y-6">
-              <p className="text-xl leading-relaxed text-foreground text-justify">
-                I'm a Product Leader with 10+ years building AI-powered experiences. I led intelligent, 
-                cross-channel messaging for a Fortune 100 organization across mobile, web, and in-vehicle experiences. 
-                My background spans platform strategy and consumer-grade front ends in both B2B and B2C.
+              <p className="text-2xl font-semibold text-primary mb-6">
+                Curious. Thoughtful. Relentless.
               </p>
               
               <p className="text-xl leading-relaxed text-foreground text-justify">
-                Throughout my career, I've built and shipped contextual personalization, learning-to-rank 
-                recommendations, and NLP document automation. I mentor PMs, shape roadmaps, 
-                and turn ambiguity into systems that ship.
+                As a kid, I kept asking why things felt clunky, then sketched a simpler way. That habit became my product compass: start with one person, one moment, one job to be done.
+              </p>
+              
+              <p className="text-xl leading-relaxed text-foreground text-justify">
+                Today I build customer-centered products. I led intelligent, cross-channel messaging for a Fortune 100 organization across mobile, web, and embedded surfaces. I pair platform strategy with polished front ends in B2B and B2C. Onboarding that makes setup effortless. Recommendation systems that surface what really matters. Document intelligence that turns messy files into clean, usable data.
+              </p>
+              
+              <p className="text-xl leading-relaxed text-foreground text-justify">
+                I listen hard, test fast, measure honestly, and ship what helps. If it doesn't reduce friction or increase relevance, it waits. That's how teams move with clarity and how products earn trust—one useful moment at a time.
               </p>
             </div>
 
