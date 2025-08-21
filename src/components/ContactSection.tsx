@@ -126,17 +126,17 @@ const ContactSection = () => {
       isEmail: true
     },
     {
-      title: "Location",
-      value: "Seattle, WA",
-      link: "#",
-      icon: MapPin,
-      isEmail: false
-    },
-    {
       title: "LinkedIn",
       value: "Connect with me",
       link: "https://www.linkedin.com/in/arushi-mishra/",
       icon: Linkedin,
+      isEmail: false
+    },
+    {
+      title: "Location",
+      value: "Seattle, WA",
+      link: "#",
+      icon: MapPin,
       isEmail: false
     }
   ];
@@ -147,15 +147,12 @@ const ContactSection = () => {
     <section id="contact" className="py-20 bg-gradient-to-br from-background via-background/95 to-muted/30">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-              Let's Connect
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-primary">
+              Contact
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Ready to collaborate on innovative solutions? Let's discuss your next project.
-            </p>
           </div>
-
+          
           <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
             {contactInfo.map((info, index) => {
               const IconComponent = info.icon;
