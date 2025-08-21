@@ -71,12 +71,13 @@ const EducationSection = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-8">
-          {education.map((edu, index) => (
-            <div
-              key={index}
-              className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/20"
-            >
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {education.map((edu, index) => (
+              <div
+                key={index}
+                className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/20 h-fit"
+              >
               <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                 <div className="flex-1">
                   <div className="flex items-start gap-3 mb-4">
@@ -193,13 +194,14 @@ const EducationSection = () => {
                       </div>
                     </div>
                   )}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+                 </div>
+               </div>
+               </div>
+             ))}
+           </div>
+         </div>
+       </div>
+     </section>
   );
 };
 
