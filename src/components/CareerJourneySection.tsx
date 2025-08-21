@@ -62,40 +62,57 @@ const CareerJourneySection = () => {
             </p>
           </div>
 
-          {/* Desktop Timeline */}
+          {/* Desktop Horizontal Timeline */}
           <div className="hidden lg:block">
-            <div className="relative">
-              {/* Timeline line */}
-              <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary via-green-500 via-purple-500 via-blue-500 to-indigo-500 transform -translate-y-1/2 rounded-full"></div>
-              
-              {/* Timeline steps */}
-              <div className="flex justify-between items-center relative z-10">
+            <div className="relative overflow-x-auto">
+              {/* Horizontal timeline line */}
+              <div className="flex items-center min-w-max px-8">
                 {journeySteps.map((step, index) => (
-                  <div key={index} className="flex flex-col items-center group">
-                    {/* Icon circle */}
-                    <div className={`w-16 h-16 rounded-full ${step.color} flex items-center justify-center text-white text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300 mb-4`}>
-                      {step.icon}
+                  <div key={index} className="flex items-center">
+                    {/* Step content */}
+                    <div className="flex flex-col items-center group min-w-[240px]">
+                      {/* Content card (above the line) */}
+                      <Card className="w-56 shadow-soft hover:shadow-medium transition-all duration-300 group-hover:-translate-y-2 mb-6">
+                        <CardContent className="p-4 text-center">
+                          <div className="text-sm font-semibold text-accent mb-1">
+                            {step.year}
+                          </div>
+                          <h3 className="font-bold text-sm text-primary mb-1 leading-tight">
+                            {step.title}
+                          </h3>
+                          <p className="text-xs font-medium text-foreground mb-2">
+                            {step.company}
+                          </p>
+                          <p className="text-xs text-muted-foreground leading-relaxed">
+                            {step.description}
+                          </p>
+                        </CardContent>
+                      </Card>
+                      
+                      {/* Icon circle (on the line) */}
+                      <div className={`w-16 h-16 rounded-full ${step.color} flex items-center justify-center text-white text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300 relative z-10 bg-white border-4 border-white`}>
+                        <div className={`w-12 h-12 rounded-full ${step.color} flex items-center justify-center text-white text-xl`}>
+                          {step.icon}
+                        </div>
+                      </div>
                     </div>
                     
-                    {/* Content card */}
-                    <Card className="w-48 shadow-soft hover:shadow-medium transition-all duration-300 group-hover:-translate-y-2">
-                      <CardContent className="p-4 text-center">
-                        <div className="text-sm font-semibold text-accent mb-1">
-                          {step.year}
-                        </div>
-                        <h3 className="font-bold text-sm text-primary mb-1 leading-tight">
-                          {step.title}
-                        </h3>
-                        <p className="text-xs font-medium text-foreground mb-2">
-                          {step.company}
-                        </p>
-                        <p className="text-xs text-muted-foreground leading-relaxed">
-                          {step.description}
-                        </p>
-                      </CardContent>
-                    </Card>
+                    {/* Connecting line (except for last item) */}
+                    {index < journeySteps.length - 1 && (
+                      <div className="h-2 w-24 bg-gradient-to-r from-current to-muted-foreground/50 mx-4 rounded-full"></div>
+                    )}
                   </div>
                 ))}
+              </div>
+              
+              {/* Direction indicator */}
+              <div className="flex justify-between items-center mt-8 px-8 text-sm text-muted-foreground">
+                <span>← Latest</span>
+                <span className="flex items-center gap-2">
+                  <span>Timeline Flow</span>
+                  <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-muted-foreground"></div>
+                </span>
+                <span>Oldest →</span>
               </div>
             </div>
           </div>
