@@ -35,8 +35,9 @@ const ProjectsSection = () => {
     {
       title: "Enterprise Closing Platform (ServiceLink)",
       description: "Shipped a unified platform for real-estate closings across three pillars: a new Order Management system, a Scheduling app for customers and agents, and NLP/ML document automation to extract key fields from loan packages.",
-      detailedDescription: "Delivered a comprehensive real-estate closing platform with three core components: Order Management with end-to-end workflow for closing orders featuring clear statuses, SLAs, and handoffs; Scheduling system with real-time availability, reminders, and reschedule flows to reduce no-shows and friction; NLP/ML Automation that extracted vesting, legal names, address, and marital status with human-in-the-loop review, audit trails and retraining loop.",
-      impact: "Turnaround time improved from 8 hours to <2 hours per file (6+ hours saved). Analytics-driven operational improvements contributed to ~15% profit lift. Achieved fewer back-and-forths and no-shows, cleaner data, and faster, more reliable closings.",
+      detailedDescription: "Delivered a comprehensive real-estate closing platform with three core components that transformed the closing process for real estate transactions. The platform integrated complex workflows across multiple stakeholders while maintaining regulatory compliance and ensuring seamless user experiences for both B2B and B2C segments.",
+      contribution: "Order Management: End-to-end workflow for closing orders with clear statuses, SLAs, and handoffs.\n\nScheduling: Real-time availability, reminders, and reschedule flows to reduce no-shows and friction.\n\nNLP/ML Automation: Extracted vesting, legal names, address, and marital status with human-in-the-loop review; audit trails and retraining loop.",
+      impact: "Turnaround time 8 hrs → <2 hrs per file (6+ hrs saved). Analytics-driven ops improvements contributed to ~15% profit lift. Fewer back-and-forths and no-shows; cleaner data and faster, more reliable closings.",
       challenges: "Integrating three distinct systems into a cohesive platform, ensuring accuracy in ML document extraction while maintaining human oversight, and coordinating complex scheduling across multiple stakeholders.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
       technologies: ["Product Management", "Platform Strategy", "Workflow Orchestration", "Scheduling Systems", "NLP/ML Automation", "Experimentation", "Analytics", "B2B & B2C"],
@@ -156,6 +157,15 @@ const ProjectsSection = () => {
                           </p>
                         </div>
                       </>
+                    )}
+
+                    {project.title === "Enterprise Closing Platform (ServiceLink)" && (
+                      <div>
+                        <h4 className="text-lg font-semibold mb-3 text-primary">My Contribution</h4>
+                        <p className="text-muted-foreground leading-relaxed text-justify whitespace-pre-line">
+                          {project.contribution}
+                        </p>
+                      </div>
                     )}
 
                     {project.title === "Messaging Platform Evolution" && (
