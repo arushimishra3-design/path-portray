@@ -20,18 +20,36 @@ const AboutSection = () => {
           {/* Main Content */}
           <div className="space-y-12">
             {/* Introduction */}
-            <div className="text-center max-w-4xl mx-auto space-y-6">
-              <p className="text-xl leading-relaxed text-foreground text-justify">
-                <span className="text-primary font-semibold">Curious. Thoughtful. Relentless.</span> As a kid, I kept asking why things felt clunky, then sketched a simpler way. That habit became my product compass: start with one person, one moment, one job to be done.
-              </p>
-              
-              <p className="text-xl leading-relaxed text-foreground text-justify">
-                Today I build customer-centered products. I led intelligent, cross-channel messaging for a Fortune 100 organization across mobile, web, and embedded surfaces. I pair platform strategy with polished front ends in B2B and B2C. Onboarding that makes setup effortless. Recommendation systems that surface what really matters. Document intelligence that turns messy files into clean, usable data.
-              </p>
-              
-              <p className="text-xl leading-relaxed text-foreground text-justify">
-                I listen hard, test fast, measure honestly, and ship what helps. If it doesn't reduce friction or increase relevance, it waits. That's how teams move with clarity and how products earn trust—one useful moment at a time.
-              </p>
+            <div className="max-w-4xl mx-auto space-y-8">
+              {/* Profile Image and Text Layout */}
+              <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+                {/* Profile Image */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <img 
+                      src="/lovable-uploads/cbe3fd6a-1b07-45c4-a462-1144fa88040a.png" 
+                      alt="Arushi Mishra - Product Leader" 
+                      className="w-48 h-48 lg:w-56 lg:h-56 rounded-full object-cover shadow-elegant border-4 border-primary/10 hover:shadow-glow transition-all duration-300"
+                    />
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/10 to-transparent"></div>
+                  </div>
+                </div>
+                
+                {/* Text Content */}
+                <div className="flex-1 space-y-6 text-center lg:text-left">
+                  <p className="text-xl leading-relaxed text-foreground">
+                    <span className="text-primary font-semibold">Curious. Thoughtful. Relentless.</span> As a kid, I kept asking why things felt clunky, then sketched a simpler way. That habit became my product compass: start with one person, one moment, one job to be done.
+                  </p>
+                  
+                  <p className="text-xl leading-relaxed text-foreground">
+                    Today I build customer-centered products. I led intelligent, cross-channel messaging for a Fortune 100 organization across mobile, web, and embedded surfaces. I pair platform strategy with polished front ends in B2B and B2C. Onboarding that makes setup effortless. Recommendation systems that surface what really matters. Document intelligence that turns messy files into clean, usable data.
+                  </p>
+                  
+                  <p className="text-xl leading-relaxed text-foreground">
+                    I listen hard, test fast, measure honestly, and ship what helps. If it doesn't reduce friction or increase relevance, it waits. That's how teams move with clarity and how products earn trust—one useful moment at a time.
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Stats Grid */}
