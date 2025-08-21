@@ -25,7 +25,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-foreground">
                 I'm a Product Leader with 10+ years building AI-powered experiences. I've led intelligent, 
@@ -66,28 +66,30 @@ const AboutSection = () => {
 
             </div>
 
-            <div className="grid grid-cols-2 gap-6">
-              {stats.map((stat, index) => (
-                <Card 
-                  key={index} 
-                  className="text-center p-6 shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105"
-                >
-                  <CardContent className="p-0">
-                    <div className="text-3xl font-bold text-primary mb-2">
-                      {stat.number}
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      {stat.label}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="flex flex-col">
+              <div className="grid grid-cols-2 gap-6">
+                {stats.map((stat, index) => (
+                  <Card 
+                    key={index} 
+                    className="text-center p-6 shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105"
+                  >
+                    <CardContent className="p-0">
+                      <div className="text-3xl font-bold text-primary mb-2">
+                        {stat.number}
+                      </div>
+                      <div className="text-sm text-muted-foreground">
+                        {stat.label}
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
 
           {/* Philosophy Section */}
           <div className="mt-16">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <button
                 onClick={() => setIsPhilosophyExpanded(!isPhilosophyExpanded)}
                 className="w-full bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 backdrop-blur-sm border-2 border-primary/20 rounded-xl p-8 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 group relative overflow-hidden"
