@@ -1,11 +1,11 @@
 import { Badge } from "@/components/ui/badge";
-import { Brain, GitBranch, Trophy } from "lucide-react";
+import { GraduationCap, Rocket, Target } from "lucide-react";
 
 const CertificationsSection = () => {
   const certifications = [
     {
       id: 1,
-      icon: Brain,
+      icon: GraduationCap,
       title: "Stanford GenAI",
       issuer: "Stanford Online",
       color: "from-red-500 to-red-600",
@@ -13,7 +13,7 @@ const CertificationsSection = () => {
     },
     {
       id: 2,
-      icon: GitBranch,
+      icon: Rocket,
       title: "SAFe APM",
       issuer: "Scaled Agile",
       color: "from-blue-500 to-blue-600",
@@ -21,7 +21,7 @@ const CertificationsSection = () => {
     },
     {
       id: 3,
-      icon: Trophy,
+      icon: Target,
       title: "OKR Coach",
       issuer: "WorkBoard",
       color: "from-purple-500 to-purple-600",
