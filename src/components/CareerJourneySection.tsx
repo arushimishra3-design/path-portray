@@ -21,16 +21,7 @@ const CareerJourneySection = () => {
       color: "bg-purple-500"
     },
     {
-      year: "2017-2019",
-      title: "Transition Period",
-      company: "Career Development",
-      type: "transition",
-      icon: "🚀",
-      description: "Expanding skills and exploring opportunities",
-      color: "bg-orange-500"
-    },
-    {
-      year: "2019-2021",
+      year: "2017-2021",
       title: "Senior Product Manager",
       company: "ServiceLink",
       type: "work",
@@ -39,21 +30,12 @@ const CareerJourneySection = () => {
       color: "bg-green-500"
     },
     {
-      year: "2021-2023",
+      year: "2021-Present",
       title: "Senior Product Manager",
       company: "Ford Motor Company",
       type: "work",
       icon: "🚗",
-      description: "Digital customer account management",
-      color: "bg-blue-600"
-    },
-    {
-      year: "2023-Present",
-      title: "Product Leader",
-      company: "Ford Motor Company",
-      type: "work",
-      icon: "⭐",
-      description: "AI-powered messaging and personalization",
+      description: "Digital customer account & AI-powered messaging",
       color: "bg-primary"
     }
   ];
@@ -75,7 +57,7 @@ const CareerJourneySection = () => {
           <div className="hidden lg:block">
             <div className="relative">
               {/* Timeline line */}
-              <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 via-orange-500 via-green-500 via-blue-600 to-primary transform -translate-y-1/2 rounded-full"></div>
+              <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 via-green-500 to-primary transform -translate-y-1/2 rounded-full"></div>
               
               {/* Timeline steps */}
               <div className="flex justify-between items-center relative z-10">
