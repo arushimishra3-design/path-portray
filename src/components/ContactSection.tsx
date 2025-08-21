@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { Mail, MapPin, Linkedin, Send, RotateCcw } from "lucide-react";
 import emailjs from '@emailjs/browser';
 import { emailjsConfig } from "@/lib/emailjs-config";
 
@@ -117,142 +118,172 @@ const ContactSection = () => {
     {
       title: "Email",
       value: "arushimishra3@gmail.com",
-      link: "mailto:arushimishra3@gmail.com"
+      link: "mailto:arushimishra3@gmail.com",
+      icon: Mail
     },
     {
       title: "Location",
       value: "Seattle, WA",
-      link: "#"
+      link: "#",
+      icon: MapPin
     },
     {
       title: "LinkedIn",
-      value: "arushi-mishra",
-      link: "https://www.linkedin.com/in/arushi-mishra/"
+      value: "Connect with me",
+      link: "https://www.linkedin.com/in/arushi-mishra/",
+      icon: Linkedin
     }
   ];
 
 
 
   return (
-    <section id="contact" className="py-20 bg-gradient-card">
+    <section id="contact" className="py-20 bg-gradient-to-br from-background via-background/95 to-muted/30">
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
-              Get In Touch
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+              Let's Connect
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              I'm always interested in new opportunities and collaborations. 
-              Let's discuss how we can work together.
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Ready to collaborate on innovative solutions? Let's discuss your next project.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <Card className="shadow-soft hover:shadow-medium transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="text-2xl text-primary">
-                  Send Message
-                </CardTitle>
-                <p className="text-sm text-muted-foreground mt-2">
-                  {emailjsConfig.serviceId === 'YOUR_SERVICE_ID' ? 
-                    "⚠️ EmailJS not configured yet. Form will show data in console for now." : 
-                    "✅ Contact form is ready to send emails!"
-                  }
-                </p>
-              </CardHeader>
-              <CardContent>
-                <form key="contact-form" onSubmit={handleSubmit} className="space-y-6" autoComplete="off">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <Input
-                        placeholder="Your Name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        autoComplete="off"
-                        className="border-border focus:border-accent"
-                      />
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Contact Form - Takes 2 columns */}
+            <div className="lg:col-span-2">
+              <Card className="shadow-elegant border-0 bg-card/80 backdrop-blur-sm hover:shadow-glow transition-all duration-300">
+                <CardHeader className="pb-6">
+                  <CardTitle className="text-2xl text-primary flex items-center gap-2">
+                    <Send className="w-6 h-6" />
+                    Send a Message
+                  </CardTitle>
+                  <p className="text-muted-foreground">
+                    Share your ideas and let's create something amazing together.
+                  </p>
+                </CardHeader>
+                <CardContent>
+                  <form key="contact-form" onSubmit={handleSubmit} className="space-y-6" autoComplete="off">
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <Input
+                          placeholder="Your Name"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          required
+                          autoComplete="off"
+                          className="h-12 border-border/50 focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all duration-200"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Input
+                          type="email"
+                          placeholder="Your Email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          required
+                          autoComplete="off"
+                          className="h-12 border-border/50 focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all duration-200"
+                        />
+                      </div>
                     </div>
-                    <div>
-                      <Input
-                        type="email"
-                        placeholder="Your Email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        autoComplete="off"
-                        className="border-border focus:border-accent"
-                      />
+                    
+                    <Input
+                      placeholder="Subject"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleChange}
+                      required
+                      autoComplete="off"
+                      className="h-12 border-border/50 focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all duration-200"
+                    />
+                    
+                    <Textarea
+                      placeholder="Tell me about your project or opportunity..."
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      rows={6}
+                      autoComplete="off"
+                      className="border-border/50 focus:border-primary focus:ring-1 focus:ring-primary/20 resize-none transition-all duration-200"
+                    />
+                    
+                    <div className="flex gap-3">
+                      <Button 
+                        type="submit" 
+                        disabled={isSubmitting}
+                        className="flex-1 h-12 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary hover:shadow-glow transition-all duration-300 disabled:opacity-50"
+                      >
+                        <Send className="w-4 h-4 mr-2" />
+                        {isSubmitting ? "Sending..." : "Send Message"}
+                      </Button>
+                      <Button 
+                        type="button"
+                        variant="outline"
+                        onClick={clearForm}
+                        disabled={isSubmitting}
+                        className="h-12 px-6 border-border/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-200"
+                      >
+                        <RotateCcw className="w-4 h-4" />
+                      </Button>
                     </div>
-                  </div>
-                  
-                  <Input
-                    placeholder="Subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                    autoComplete="off"
-                    className="border-border focus:border-accent"
-                  />
-                  
-                  <Textarea
-                    placeholder="Your Message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    autoComplete="off"
-                    className="border-border focus:border-accent resize-none"
-                  />
-                  
-                  <div className="flex gap-4">
-                    <Button 
-                      type="submit" 
-                      disabled={isSubmitting}
-                      className="flex-1 bg-gradient-hero hover:shadow-glow transition-all duration-300 disabled:opacity-50"
-                    >
-                      {isSubmitting ? "Sending..." : "Send Message"}
-                    </Button>
-                    <Button 
-                      type="button"
-                      variant="outline"
-                      onClick={clearForm}
-                      disabled={isSubmitting}
-                      className="px-6"
-                    >
-                      Clear
-                    </Button>
-                  </div>
-                </form>
-              </CardContent>
-            </Card>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
 
-                        {/* Contact Info */}
-            <Card className="shadow-soft">
-              <CardHeader>
-                <CardTitle className="text-xl text-primary">
-                  Contact Information
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {contactInfo.map((info, index) => (
-                  <div key={index} className="flex justify-between items-center p-3 rounded-lg hover:bg-accent/5 transition-colors duration-200">
-                    <span className="font-medium text-foreground">{info.title}</span>
-                    <a 
-                      href={info.link} 
-                      className="text-accent hover:text-accent-hover transition-colors duration-200"
-                    >
-                      {info.value}
-                    </a>
+            {/* Contact Info - Takes 1 column */}
+            <div className="space-y-6">
+              <Card className="shadow-elegant border-0 bg-card/80 backdrop-blur-sm">
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-xl text-primary">
+                    Get in Touch
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  {contactInfo.map((info, index) => {
+                    const IconComponent = info.icon;
+                    return (
+                      <a
+                        key={index}
+                        href={info.link}
+                        className="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-muted/20 to-muted/10 hover:from-primary/5 hover:to-primary/10 border border-border/30 hover:border-primary/20 transition-all duration-300 group"
+                      >
+                        <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors duration-200">
+                          <IconComponent className="w-5 h-5 text-primary" />
+                        </div>
+                        <div className="flex-1">
+                          <p className="font-medium text-foreground group-hover:text-primary transition-colors duration-200">
+                            {info.title}
+                          </p>
+                          <p className="text-sm text-muted-foreground">
+                            {info.value}
+                          </p>
+                        </div>
+                      </a>
+                    );
+                  })}
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-elegant border-0 bg-gradient-to-br from-primary/5 to-primary/10">
+                <CardContent className="p-6">
+                  <div className="text-center space-y-3">
+                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto">
+                      <Mail className="w-6 h-6 text-primary" />
+                    </div>
+                    <h3 className="font-semibold text-primary">Quick Response</h3>
+                    <p className="text-sm text-muted-foreground">
+                      I typically respond within 24 hours during business days.
+                    </p>
                   </div>
-                ))}
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
