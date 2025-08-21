@@ -45,7 +45,7 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="py-12 bg-gradient-card">
+    <section id="skills" className="py-20 bg-gradient-card">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
