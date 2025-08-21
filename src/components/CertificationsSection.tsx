@@ -29,7 +29,9 @@ const CertificationsSection = () => {
       title: "OKR Coach",
       issuer: "WorkBoard",
       color: "from-purple-500 to-purple-600",
-      pdfPath: "/certificates/okr-coach-certification.pdf"
+      pdfPath: "/certificates/okr-coach-certification.pdf",
+      isImage: true,
+      imageSrc: "/lovable-uploads/595e2231-e791-4d31-afe7-edf8e7bd59a1.png"
     }
   ];
 
