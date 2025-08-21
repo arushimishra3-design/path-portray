@@ -18,7 +18,7 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
-              About Me
+              About Me  
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Passionate about creating digital solutions that make a real difference
