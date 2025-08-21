@@ -65,7 +65,6 @@ const AboutSection = () => {
                     "Product strategy & execution",
                     "AI & Personalization", 
                     "Data-driven decision making",
-                    "Crisp storytelling",
                     "Customer empathy"
                   ].map((strength, index) => (
                     <span 
