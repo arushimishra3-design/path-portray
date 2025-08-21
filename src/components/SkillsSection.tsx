@@ -5,11 +5,11 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       title: "Product Management",
-      skills: ["Product Strategy", "Roadmapping", "Agile/Scrum", "A/B Testing"]
+      skills: ["Product Strategy", "Roadmapping", "Agile/Scrum", "A/B Testing", "Stakeholder Management", "Cross-functional alignment", "Product feature prioritization"]
     },
     {
       title: "AI & Personalization", 
-      skills: ["AI-Powered Features", "Personalization", "Predictive Analytics", "Customer Segmentation"]
+      skills: ["AI-Powered Features", "Personalization", "Predictive Analytics", "Customer Segmentation", "Offline and online evaluation", "Feature reduction/addition", "Ranking and recommendation systems"]
     },
     {
       title: "Data & Analytics",
