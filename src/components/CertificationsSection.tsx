@@ -6,7 +6,7 @@ const CertificationsSection = () => {
     {
       id: 1,
       logo: "🎓", // Stanford Online logo placeholder
-      title: "XAPRO210 - Mastering Generative AI for Product Innovation",
+      title: "Mastering Generative AI for Product Innovation",
       issuer: "Stanford Online",
       issuedDate: "Apr 2025",
       credentialId: "",
