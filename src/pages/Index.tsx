@@ -6,7 +6,6 @@ import ExperienceSection from "@/components/ExperienceSection";
 import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import CertificationsSection from "@/components/CertificationsSection";
-import PhilosophySection from "@/components/PhilosophySection";
 import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
@@ -15,12 +14,11 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <AboutSection />
-      <ExperienceSection />
-      <SkillsSection />
       <CertificationsSection />
       <ProjectsSection />
+      <ExperienceSection />
+      <SkillsSection />
       <EducationSection />
-      <PhilosophySection />
       <ContactSection />
       {/* Footer */}
       <footer className="bg-muted/30 py-12">
