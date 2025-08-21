@@ -34,7 +34,7 @@ const HeroSection = () => {
             Product Leader who turns data into delight.<br />
             <br />
             10+ years building intelligent experiences across startups and 14M+ user platforms.<br />
-            Carnegie Mellon & Stanford Alum.
+            Forged by Carnegie Mellon engineering & Stanford innovation.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
