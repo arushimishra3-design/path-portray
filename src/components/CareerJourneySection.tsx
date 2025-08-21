@@ -3,22 +3,13 @@ import { Card, CardContent } from "@/components/ui/card";
 const CareerJourneySection = () => {
   const journeySteps = [
     {
-      year: "2013-2016",
-      title: "Product Data Analyst",
-      company: "Wipro Limited",
+      year: "2021-Present",
+      title: "Senior Product Manager",
+      company: "Ford Motor Company",
       type: "work",
-      icon: "💼",
-      description: "Started career in telecommunications analytics",
-      color: "bg-blue-500"
-    },
-    {
-      year: "2016-2017",
-      title: "Master's Degree",
-      company: "Carnegie Mellon University",
-      type: "education",
-      icon: "🎓",
-      description: "Advanced studies in technology and innovation",
-      color: "bg-purple-500"
+      icon: "🚗",
+      description: "Digital customer account & AI-powered messaging",
+      color: "bg-primary"
     },
     {
       year: "2017-2021",
@@ -30,13 +21,31 @@ const CareerJourneySection = () => {
       color: "bg-green-500"
     },
     {
-      year: "2021-Present",
-      title: "Senior Product Manager",
-      company: "Ford Motor Company",
+      year: "2016-2017",
+      title: "Master's Degree",
+      company: "Carnegie Mellon University",
+      type: "education",
+      icon: "🎓",
+      description: "Advanced studies in technology and innovation",
+      color: "bg-purple-500"
+    },
+    {
+      year: "2013-2016",
+      title: "Product Data Analyst",
+      company: "Wipro Limited",
       type: "work",
-      icon: "🚗",
-      description: "Digital customer account & AI-powered messaging",
-      color: "bg-primary"
+      icon: "💼",
+      description: "Started career in telecommunications analytics",
+      color: "bg-blue-500"
+    },
+    {
+      year: "2008-2012",
+      title: "Bachelor's in Computer Science",
+      company: "MMMEC India",
+      type: "education",
+      icon: "🎓",
+      description: "Foundation in computer science and engineering",
+      color: "bg-indigo-500"
     }
   ];
 
@@ -57,7 +66,7 @@ const CareerJourneySection = () => {
           <div className="hidden lg:block">
             <div className="relative">
               {/* Timeline line */}
-              <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 via-green-500 to-primary transform -translate-y-1/2 rounded-full"></div>
+              <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary via-green-500 via-purple-500 via-blue-500 to-indigo-500 transform -translate-y-1/2 rounded-full"></div>
               
               {/* Timeline steps */}
               <div className="flex justify-between items-center relative z-10">
