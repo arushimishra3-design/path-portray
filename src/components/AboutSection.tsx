@@ -25,7 +25,7 @@ const AboutSection = () => {
             {/* Introduction */}
             <div className="text-center max-w-4xl mx-auto space-y-6">
               <p className="text-xl leading-relaxed text-foreground text-justify">
-                <span className="text-primary font-semibold">Curious. Thoughtful. Relentless.</span> As a kid, I kept asking why things felt clunky, then sketched a simpler way. That habit became my product compass: start with one person, one moment, one job to be done.
+                As a kid, I kept asking why things felt clunky, then sketched a simpler way. That habit became my product compass: start with one person, one moment, one job to be done.
               </p>
               
               <p className="text-xl leading-relaxed text-foreground text-justify">
