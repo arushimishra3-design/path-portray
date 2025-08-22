@@ -52,7 +52,7 @@ const ProjectsSection = () => {
       detailedDescription: "Built and launched a comprehensive customer analytics platform for telecommunications industry clients, leveraging advanced machine learning algorithms to predict customer behavior and segment users effectively. The platform processed millions of data points daily to generate actionable insights, churn prediction models, and personalized marketing recommendations. Worked closely with data science teams to translate complex analytics into user-friendly dashboards and automated reporting systems.",
       impact: "Generated $2M+ additional revenue for clients, reduced customer churn by 18%, and improved marketing campaign ROI by 32%.",
       challenges: "Handling massive datasets, ensuring real-time analytics performance, and creating intuitive interfaces for non-technical users.",
-      image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=800&q=80",
+      image: "/lovable-uploads/Telefonica-Img-924x512.png",
       surfaces: "Web Dashboard",
       technologies: ["Data Analytics", "Predictive Modeling", "Customer Segmentation", "Business Intelligence", "ROI Optimization"],
       duration: "36 months",
@@ -77,7 +77,7 @@ const ProjectsSection = () => {
             {projects.map((project, index) => (
               <Dialog key={index}>
                 <DialogTrigger asChild>
-                  <Card className="group shadow-soft hover:shadow-strong transition-all duration-300 overflow-hidden cursor-pointer">
+                  <Card className="group shadow-soft hover:shadow-strong transition-all duration-300 overflow-hidden cursor-pointer h-full flex flex-col">
                     <div className="relative overflow-hidden">
                       <img 
                         src={project.image} 
@@ -93,17 +93,19 @@ const ProjectsSection = () => {
                       </CardTitle>
                     </CardHeader>
                     
-                    <CardContent className="space-y-4">
-                      <p className="text-muted-foreground leading-relaxed">
-                        {project.description}
-                      </p>
-                      
-                      <div className="flex flex-wrap gap-2">
-                        {project.technologies.map((tech, techIndex) => (
-                          <Badge key={techIndex} variant="secondary" className="text-xs">
-                            {tech}
-                          </Badge>
-                        ))}
+                    <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
+                      <div className="space-y-4">
+                        <p className="text-muted-foreground leading-relaxed">
+                          {project.description}
+                        </p>
+                        
+                        <div className="flex flex-wrap gap-2">
+                          {project.technologies.map((tech, techIndex) => (
+                            <Badge key={techIndex} variant="secondary" className="text-xs">
+                              {tech}
+                            </Badge>
+                          ))}
+                        </div>
                       </div>
                       
                       <div className="pt-2">
