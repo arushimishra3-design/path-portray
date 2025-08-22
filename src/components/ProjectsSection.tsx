@@ -319,8 +319,8 @@ const ProjectsSection = () => {
                               <div className="w-2 h-2 bg-primary rounded-full"></div>
                               <h5 className="text-base font-semibold text-primary">Engagement Boost</h5>
                             </div>
-                            <p className="text-sm text-muted-foreground">Opens <span className="font-bold text-primary">+4 pts</span></p>
-                            <p className="text-xs text-muted-foreground mt-1">📈 ~14% → ~18%</p>
+                            <p className="text-sm text-muted-foreground">Opens <span className="font-bold text-primary">+8 pts</span></p>
+                            <p className="text-xs text-muted-foreground mt-1">📈 10-18%</p>
                           </div>
                           
                           <div className="bg-muted/30 border border-border rounded-lg p-4 hover:shadow-sm transition-shadow">
