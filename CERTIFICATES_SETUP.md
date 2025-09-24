@@ -80,3 +80,5 @@ If your PDFs have different names, update the `pdfPath` in `src/components/Certi
 - **Works both locally and in production**
 
 Your certifications section is now fully functional with PDF linking! 🎉📜
+
+

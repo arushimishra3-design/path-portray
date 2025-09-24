@@ -6,9 +6,16 @@ import ExperienceSection from "@/components/ExperienceSection";
 import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import CertificationsSection from "@/components/CertificationsSection";
+import ArticlesSection from "@/components/ArticlesSection";
+import { trackPageView } from "@/lib/analytics";
+import { useEffect } from "react";
 
 
 const Index = () => {
+  useEffect(() => {
+    trackPageView('Portfolio Home');
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -16,6 +23,7 @@ const Index = () => {
       <AboutSection />
       <CertificationsSection />
       <ProjectsSection />
+      <ArticlesSection />
       <ExperienceSection />
       <SkillsSection />
       <EducationSection />
