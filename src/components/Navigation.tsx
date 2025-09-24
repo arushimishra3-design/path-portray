@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
     { id: "home", label: "Home" },
@@ -46,6 +48,8 @@ const Navigation = () => {
         top: elementPosition,
         behavior: "smooth"
       });
+      // Close mobile menu after navigation
+      setIsMobileMenuOpen(false);
     } else {
       console.warn(`Element with id "${sectionId}" not found`);
     }
@@ -80,16 +84,38 @@ const Navigation = () => {
             ))}
           </div>
           
+          {/* Mobile Menu Button */}
           <Button
-            variant="outline"
+            variant="ghost"
             size="sm"
             className="md:hidden"
-            onClick={() => scrollToSection("about")}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            About
+            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
         </div>
       </div>
+      
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-background/95 backdrop-blur-lg border-t border-border/50">
+          <div className="container mx-auto px-6 py-4">
+            <div className="flex flex-col space-y-2">
+              {navItems.map((item) => (
+                <Button
+                  key={item.id}
+                  variant={activeSection === item.id ? "default" : "ghost"}
+                  size="sm"
+                  onClick={() => scrollToSection(item.id)}
+                  className="justify-start transition-all duration-200"
+                >
+                  {item.label}
+                </Button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
