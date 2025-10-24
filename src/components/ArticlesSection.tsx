@@ -72,6 +72,16 @@ const ArticlesSection = () => {
       readTime: "5 min read",
       tags: ["Artificial Intelligence", "Product Strategy", "Human-AI Collaboration", "Innovation"],
       imageUrl: "https://media.licdn.com/dms/image/v2/D5612AQHmg-O1Tj-4NA/article-cover_image-shrink_720_1280/B56ZaAiNeMGUAI-/0/1745913177112?e=1761782400&v=beta&t=BpG6_sWW118Ff75_4TnXQ-vnUgIDuT4No20BwDDib64"
+    },
+    {
+      id: '7',
+      title: "Why AI Product Sense Needs Realm: What I Learned from Aakash Gupta's AI Framework",
+      excerpt: "Exploring the intersection of AI product sense and realm-based thinking, drawing insights from Aakash Gupta's framework for building AI products that truly understand user context.",
+      url: "https://medium.com/@arushimishra3/why-ai-product-sense-needs-realm-what-i-learned-from-aakash-guptas-ai-framework-ca665d0d7fda",
+      readTime: "5 min read",
+      tags: ["AI Product Sense", "Product Strategy", "AI Framework", "User Context", "Product Management"],
+      featured: true,
+      imageUrl: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*n-Evvo5TZ6MCEbODgorhmQ.png"
     }
   ];
 
