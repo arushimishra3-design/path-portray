@@ -71,7 +71,7 @@ const ArticlesSection = () => {
       url: "https://www.linkedin.com/pulse/brains-bots-battle-intelligence-arushi-mishra-nxuuc/",
       readTime: "5 min read",
       tags: ["Artificial Intelligence", "Product Strategy", "Human-AI Collaboration", "Innovation"],
-      imageUrl: "https://media.licdn.com/dms/image/v2/D5612AQHmg-O1Tj-4NA/article-cover_image-shrink_720_1280/B56ZaAiNeMGUAI-/0/1745913177112?e=1761782400&v=beta&t=BpG6_sWW118Ff75_4TnXQ-vnUgIDuT4No20BwDDib64"
+      imageUrl: "/images/brain vs bots.png"
     },
     {
       id: '7',
