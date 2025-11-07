@@ -18,6 +18,16 @@ const ArticlesSection = () => {
   // Your real Medium articles
   const articles: Article[] = [
     {
+      id: '8',
+      title: "Building a Travel AI Agent: Three Agents, Four APIs, Zero Forms (My first AI agent)",
+      excerpt: "An in-depth guide on creating an AI travel agent that simplifies trip planning using multiple AI agents and APIs, eliminating the need for traditional forms and making travel planning seamless and conversational.",
+      url: "https://medium.com/@arushimishra3/building-a-travel-ai-agent-three-agents-four-apis-zero-forms-71246ffdedf1",
+      readTime: "7 min read",
+      tags: ["n8n", "SerpAPI", "AI Agents", "Travel Tech", "Product Development", "API Integration", "AI Product Management"],
+      featured: true,
+      imageUrl: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*-ZW3YE0F2C8ttwCR2r34uQ.png"
+    },
+    {
       id: '1',
       title: "AI Product Management: Cut Through the Noise and Get Started",
       excerpt: "A practical guide for product managers looking to navigate the AI landscape, cut through the hype, and build a strong foundation in AI product management.",
@@ -124,7 +134,7 @@ const ArticlesSection = () => {
                       <img 
                         src={article.imageUrl} 
                         alt={article.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-cover object-[center_5%] group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
                   )}
